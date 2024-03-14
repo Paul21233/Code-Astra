@@ -1,0 +1,41 @@
+.backgroundColor{
+    -fx-background-color:
+            linear-gradient(to top, rgba(238,238,238,1) 10%, rgb(88, 77, 206) 100%, rgb(255, 255, 255) 100%);
+}
+
+.custom-box{
+    -fx-background-color: #6f61ea;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
+}
+
+.custom-tfield{
+    -fx-background-color: transparent;
+    -fx-text-fill: whitesmoke;
+}
+
+.custom-emailField{
+    -fx-background-color: transparent;
+    -fx-border-color: whitesmoke;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: whitesmoke;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
+}
+
+.custom-passwordField{
+    -fx-background-color: transparent;
+    -fx-border-color: whitesmoke;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: whitesmoke;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
+}
+
+.custom-button{
+    -fx-background-color: #6f61ea;
+    /*-fx-border-color: whitesmoke;*/
+    -fx-prompt-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
+}
