@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
@@ -22,11 +23,19 @@
             <font>
                 <Font size="38.0" />
             </font>
+         <styleClass>
+            <String fx:value="hyperlink" />
+            <String fx:value="hyperlink" />
+         </styleClass>
         </Hyperlink>
         <Hyperlink alignment="CENTER" contentDisplay="CENTER" layoutX="718.0" layoutY="688.0" prefHeight="67.26" prefWidth="560.0" stylesheets="@../styles/styles.css" text="Intermediate Level" textFill="WHITESMOKE">
             <font>
                 <Font size="38.0" />
             </font>
+         <styleClass>
+            <String fx:value="hyperlink" />
+            <String fx:value="hyperlink" />
+         </styleClass>
         </Hyperlink>
          <TextField layoutX="761.0" layoutY="282.0" opacity="0.7" prefHeight="50.0" prefWidth="481.0" promptText="Search..." styleClass="search-box" stylesheets="@../styles/styles.css" AnchorPane.leftAnchor="761.0" AnchorPane.topAnchor="282.0">
          <font>
