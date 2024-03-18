@@ -4,3 +4,9 @@
     -fx-background-size: cover;
     -fx-background-color: linear-gradient(to top, rgb(43, 43, 43) 100%, rgb(43, 43, 43) 100%);
 }
+
+.custom-box{
+    -fx-background-color: #2b2b2b;
+    -fx-effect: dropshadow(gaussian, rgba(204, 204, 204, 0.82), 10, 0, 0, 0);
+    -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
+}
