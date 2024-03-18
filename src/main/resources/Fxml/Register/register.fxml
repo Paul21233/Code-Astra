@@ -82,7 +82,7 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <Button layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Button" />
+      <Button layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up" />
       <CheckBox layoutX="880.0" layoutY="700.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
       <ChoiceBox layoutX="563.0" layoutY="471.0" prefHeight="25.0" prefWidth="19.0" />
    </children>
