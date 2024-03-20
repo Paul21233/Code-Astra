@@ -7,6 +7,8 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
@@ -72,6 +74,11 @@
             <Glow />
          </effect>
       </Label>
+      <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/FINAL_Logo_PNG.png" />
+         </image>
+      </ImageView>
     </children>
    <styleClass>
       <String fx:value="backgroundColor" />

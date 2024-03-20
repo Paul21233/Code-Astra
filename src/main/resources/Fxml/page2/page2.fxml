@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -99,5 +100,10 @@
       </Label>
       <ImageView cache="true" cacheHint="SPEED" fitHeight="230.0" fitWidth="340.0" layoutX="1504.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
       <TextArea blendMode="DARKEN" depthTest="DISABLE" editable="false" layoutX="1500.0" layoutY="540.0" prefHeight="300.0" prefWidth="340.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" wrapText="true" />
+      <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/FINAL_Logo_PNG.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

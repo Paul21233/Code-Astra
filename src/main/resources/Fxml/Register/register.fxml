@@ -13,8 +13,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/register.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
+      <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/FINAL_Logo_PNG.png" />
+         </image>
+      </ImageView>
       <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="687.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0" styleClass="custom-box" stylesheets="@../../styles/styles.css">
          <children>
             <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home" textFill="WHITESMOKE">
