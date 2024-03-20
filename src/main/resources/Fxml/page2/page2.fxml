@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -41,5 +44,60 @@
             <GaussianBlur />
          </effect>
       </HBox>
+      <Button layoutX="130.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="300.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C++" textFill="WHITESMOKE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="HTML" textFill="WHITESMOKE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="640.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Python" textFill="WHITESMOKE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="130.0" layoutY="740.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Java" textFill="WHITESMOKE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="300.0" layoutY="740.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="CSS" textFill="WHITESMOKE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="130.0" layoutY="380.0" prefHeight="196.0" prefWidth="637.0" text="What language do you want to learn?" textFill="WHITESMOKE" wrapText="true">
+         <font>
+            <Font size="63.0" />
+         </font>
+      </Label>
+      <ImageView cache="true" cacheHint="SPEED" fitHeight="230.0" fitWidth="340.0" layoutX="1504.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea blendMode="DARKEN" depthTest="DISABLE" editable="false" layoutX="1500.0" layoutY="540.0" prefHeight="300.0" prefWidth="340.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" wrapText="true" />
    </children>
 </AnchorPane>
