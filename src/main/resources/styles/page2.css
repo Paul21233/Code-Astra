@@ -34,3 +34,16 @@
     -fx-background-color: transparent;
     -fx-control-inner-background: #2b2b2b;
 }
+
+.custom-circle-button{
+    -fx-border-width: 1px solid;
+    -fx-shape: "M 57.5,57.5 A 57.5,57.5 0 1,1 57.5,0 A 57.5,57.5 0 0,1 115,57.5 A 57.5,57.5 0 1,1 57.5,115 A 57.5,57.5 0 1,1 57.5,57.5 Z";
+    -fx-border-color: whitesmoke;
+    -fx-background-color: rgba(176, 174, 174, 0);
+    -fx-underline: false;
+    -fx-background-radius: 50%;
+    -fx-min-width: 115px;
+    -fx-min-height: 115px;
+    -fx-max-width: 115px;
+    -fx-max-height: 115px;
+}
