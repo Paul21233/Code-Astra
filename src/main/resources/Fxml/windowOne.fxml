@@ -89,6 +89,9 @@
          <font>
             <Font size="30.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </Button>
       <Button layoutX="718.0" layoutY="700.0" mnemonicParsing="false" prefHeight="67.26" prefWidth="560.0" styleClass="custom-link" stylesheets="@../styles/styles.css" text="Intermadiate Level" textFill="WHITESMOKE">
          <opaqueInsets>
