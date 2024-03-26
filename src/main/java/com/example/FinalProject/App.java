@@ -15,8 +15,9 @@ public class App extends Application {
     public void start(Stage stage) throws Exception{
         try{
             FXMLLoader root = new FXMLLoader(App.class.getResource("Fxml/register.fxml"));
-            Scene scene = new Scene(root.load());
-            stage.setScene(scene);
+//            Scene scene = new Scene(root.load());
+            Parent scene = root.load();
+            stage.setScene(scene.getScene());
             stage.show();
             stage.setOnCloseRequest(event ->
             {

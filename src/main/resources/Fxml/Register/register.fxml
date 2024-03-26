@@ -54,7 +54,6 @@
          </effect>
       </HBox>
       <PasswordField fx:id="pass1" layoutX="556.0" layoutY="590.0" prefHeight="60.0" prefWidth="405.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
-      <PasswordField fx:id="pass2" layoutX="1036.0" layoutY="590.0" prefHeight="60.0" prefWidth="405.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
       <TextField fx:id="username" layoutX="556.0" layoutY="311.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
       <TextField fx:id="email" layoutX="1038.0" layoutY="312.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-emailField" stylesheets="@../../styles/register.css" />
       <TextField fx:id="phone" layoutX="554.0" layoutY="452.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
@@ -84,12 +83,7 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <Label layoutX="1038.0" layoutY="540.0" prefHeight="40.0" prefWidth="229.0" text="Confirm Password:" textFill="WHITESMOKE">
-         <font>
-            <Font size="27.0" />
-         </font>
-      </Label>
-      <Button layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
+      <Button fx:id="signUp" layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
