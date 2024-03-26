@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse('Home Page')
+
+# def home(request):
+#     return HttpResponse('Home Page')
+
 
 urlpatterns = [
     path('fields/', include('fields.urls')),
