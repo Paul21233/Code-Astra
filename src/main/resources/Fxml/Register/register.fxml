@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.DatePicker?>
@@ -88,7 +89,10 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <Button layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up" />
+      <Button layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
       <CheckBox layoutX="880.0" layoutY="700.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
    </children>
 </AnchorPane>
