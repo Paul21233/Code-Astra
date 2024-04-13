@@ -19,6 +19,8 @@
     -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
 }
 
+/* form CSS */
+
 .custom-tfield{
     -fx-background-color: transparent;
     -fx-text-fill: whitesmoke;

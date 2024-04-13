@@ -2,7 +2,8 @@
     -fx-background-image: url("../image/bg_img.jpg");
     -fx-background-repeat: no repeat;
     -fx-background-size: cover;
-    -fx-background-color: linear-gradient(to top, rgb(43, 43, 43) 100%, rgb(43, 43, 43) 100%);}
+    -fx-background-color: linear-gradient(to top, rgb(43, 43, 43) 100%, rgb(43, 43, 43) 100%);
+}
 
 .custom-box{
     -fx-background-color: #2b2b2b;

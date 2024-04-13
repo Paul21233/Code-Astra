@@ -1,168 +1,162 @@
 package com.example.FinalProject.Controllers.Register;
 
-//import com.example.FinalProject.DatabaseManager;
-//import javafx.event.ActionEvent;
-//import javafx.fxml.FXML;
-//import javafx.scene.control.*;
-//import javafx.scene.image.Image;
-//import javafx.scene.image.ImageView;
-//
-//import java.io.IOException;
-//import java.net.HttpURLConnection;
-//import java.net.URL;
-//import java.sql.SQLException;
-//import java.util.Objects;
-//
-//public class registerController {
-//
-//    @FXML
-//    private TextField usernameCheck;
-//
-//    @FXML
-//    private TextField emailPicker;
-//
-//    @FXML
-//    private TextField phonePicker;
-//
-//    @FXML
-//    private DatePicker dobPicker;
-//
-//    @FXML
-//    private PasswordField PasswordCreate;
-//
-//    @FXML
-//    private PasswordField confirmPassword;
-//
-//    @FXML
-//    private CheckBox confirmTerms;
-//
-//    @FXML
-//    private Button SignupClick;
-//
-////    @FXML
-////    private Label Name;
-////
-////    @FXML
-////    private Label Email;
-////    @FXML
-////    private Label Phone;
-////    @FXML
-////    private Label DOB;
-////    @FXML
-////    private Label Pass;
-////    @FXML
-////    private Label ConfirmPass;
-//
-//
-//    @FXML
-//    void sign_up(ActionEvent event) throws IOException{
-//        if(confirmTerms.isSelected()){
-//            try{
-//                String username = usernameCheck.getText();
-//                String password = PasswordCreate.getText();
-//                String email = emailPicker.getText();
-//                String phone = phonePicker.getText();
-//                String dob = dobPicker.getValue().toString();
-//
-//                DatabaseManager.registerUser(username, password, email, phone, dob);
-//
-//            } catch (SQLException e) {
-//                throw new RuntimeException(e);
-//            }
-//        }
-//    }
-//}
-
-
+import javafx.application.Platform;
 import javafx.concurrent.Task;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class registerController {
 
     @FXML
-    private TextField loginField;
+    private PasswordField password;
 
     @FXML
-    private TextField passwordField;
+    private PasswordField confirmPassword;
 
     @FXML
-    private ImageView loginOk;
+    private TextField username;
 
     @FXML
-    private ImageView passwordOk;
+    private Label home;
 
     @FXML
-    private Button createAccountButton;
+    private Label edit;
 
-    public void initialize() {
-        Image okSymbol = new Image(Objects.requireNonNull(getClass().getResourceAsStream("ok_symbol.png")));
-        loginOk.setImage(okSymbol);
-        loginOk.setVisible(false);
-        passwordOk.setImage(okSymbol);
-        passwordOk.setVisible(false);
+    @FXML
+    private Label about;
 
-        loginField.textProperty().addListener((observable, oldValue, newValue) -> validateLoginField());
-        passwordField.textProperty().addListener((observable, oldValue, newValue) -> validatePasswordField());
+    @FXML
+    private TextField email;
 
-        createAccountButton.disableProperty().bind(loginOk.visibleProperty().not().or(passwordOk.visibleProperty().not()));
+    @FXML
+    private TextField phone;
+
+    @FXML
+    private DatePicker dob;
+
+    @FXML
+    private Button signUp;
+
+    @FXML
+    private CheckBox agree_tc;
+
+    @FXML
+    private Label successMessageLabel, errorLabel;
+
+    @FXML
+    private void initialize()
+    {
+        username.textProperty().addListener((observable, oldValue, newValue) -> validateFields());
+        email.textProperty().addListener((observable, oldValue, newValue) -> validateFields());
+        phone.textProperty().addListener((observable, oldValue, newValue) -> validateFields());
+        dob.valueProperty().addListener((observable, oldValue, newValue) -> validateFields());
+        password.textProperty().addListener((observable, oldValue, newValue) -> validateFields());
+        confirmPassword.textProperty().addListener((observable, oldValue, newValue) -> validateFields());
     }
 
-    private void validateLoginField() {
-        loginOk.setVisible(loginField.getText().length() >= 4);
-    }
+    @FXML
+    private void validateFields() {
+//        boolean emailValid = isValidEmail(email.getText());
+//        boolean phoneValid = isValidPhoneNumber(phone.getText());
 
-    private void validatePasswordField() {
-        passwordOk.setVisible(passwordField.getText().length() >= 6);
+        signUp.setDisable(
+                username == null || username.getText().trim().isEmpty() ||
+                email == null || email.getText().trim().isEmpty() || phone == null || phone.getText().isEmpty() ||
+                        dob == null || dob.getValue() == null ||
+                        password.getText().length() < 6 ||
+                        !password.getText().equals(confirmPassword.getText())
+        );
     }
 
     @FXML
     private void handleCreateAccount(ActionEvent event) {
-        if (loginOk.isVisible() && passwordOk.isVisible()) {
-            String login = loginField.getText();
-            String password = passwordField.getText();
+        validateFields();
+        if (!signUp.isDisabled()) {
+            String username = this.username.getText().trim();
+            String email = this.email.getText().trim();
+            String phone = this.phone.getText().trim();
+            LocalDate dob = this.dob.getValue();
+            String password = this.password.getText();
 
-            // Make HTTP request to Django backend to create an account
+            // Hash the password securely
+            String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+
+            // Sending data to Django backend
             Task<Void> task = new Task<Void>() {
                 @Override
                 protected Void call() throws Exception {
-                    try {
-                        URL url = new URL("http://your-django-backend-url/create_account/");
+                    try
+                    {
+                        URL url = new URL("http://127.0.0.1:8000/register/");
                         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
                         connection.setRequestMethod("POST");
                         connection.setDoOutput(true);
-                        // Add parameters (login, password) to the request body
-                        // Here you would typically use JSON or other format suitable for your backend
-                        String postData = "login=" + login + "&password=" + password;
+
+                        String postData = "username=" + URLEncoder.encode(username, StandardCharsets.UTF_8) +
+                                "&email=" + URLEncoder.encode(email, StandardCharsets.UTF_8) +
+                                "&phone=" + URLEncoder.encode(phone, StandardCharsets.UTF_8) +
+                                "&dob=" + URLEncoder.encode(dob.toString(), StandardCharsets.UTF_8) +
+                                "&hashed_password=" + URLEncoder.encode(hashedPassword, StandardCharsets.UTF_8);
+
                         connection.getOutputStream().write(postData.getBytes());
 
-                        // Handle response
                         int responseCode = connection.getResponseCode();
-                        // Handle response based on response code
-                        if (responseCode == HttpURLConnection.HTTP_OK) {
-                            // Account created successfully
-                            System.out.println("Account created successfully");
-                        } else {
-                            // Error handling for failed account creation
-                            System.out.println("Failed to create account");
-                        }
+                        Platform.runLater(() -> {
+                            if (responseCode == HttpURLConnection.HTTP_OK) {
+                                // Display success message
+                                successMessageLabel.setVisible(true);
+                                successMessageLabel.setText("Account created successfully!");
+                            } else {
+                                // Display error message based on responseCode
+                                String errorMessage = switch (responseCode) {
+                                    case HttpURLConnection.HTTP_BAD_REQUEST -> "Invalid input data";
+                                    case HttpURLConnection.HTTP_CONFLICT -> "Username already exists";
+                                    default -> "Unexpected error";
+                                };
+                                errorLabel.setText(errorMessage);
+                            }
+                        });
                     } catch (IOException e) {
-                        e.printStackTrace();
+                        // Handle network errors on UI thread
+                        // Handle network errors on UI thread
+                        Platform.runLater(() -> {
+                            errorLabel.setText("Network error occurred. Please try again.");
+                        });
                     }
                     return null;
                 }
             };
 
-            new Thread(task).start();
+
+
+            Platform.runLater(() -> {
+                new Thread(task).start();
+            });
+
         }
     }
+
+    // Custom validation functions
+//    private boolean isValidEmail(String email) {
+//        // a regular expression to check email format
+//        String emailRegex = "^[\\w-.]+@([\\w-]+\\.)+[\\w-]{2,}$";
+//        return email.matches(emailRegex);
+//    }
+//
+//    private boolean isValidPhoneNumber(String phone) {
+//        // phone number format validation
+//        return phone.matches("\\d{10}");
+//    }
 }

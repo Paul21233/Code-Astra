@@ -1,0 +1,94 @@
+@FXML
+    private TextField loginField;
+
+    @FXML
+    private TextField passwordField;
+
+    @FXML
+    private ImageView loginOk;
+
+    @FXML
+    private ImageView passwordOk;
+
+    @FXML
+    private Button createAccountButton;
+
+    public void initialize() {
+        Image okSymbol = new Image(Objects.requireNonNull(getClass().getResourceAsStream("ok_symbol.png")));
+        loginOk.setImage(okSymbol);
+        loginOk.setVisible(false);
+        passwordOk.setImage(okSymbol);
+        passwordOk.setVisible(false);
+
+        loginField.textProperty().addListener((observable, oldValue, newValue) -> validateLoginField());
+        passwordField.textProperty().addListener((observable, oldValue, newValue) -> validatePasswordField());
+
+        createAccountButton.disableProperty().bind(loginOk.visibleProperty().not().or(passwordOk.visibleProperty().not()));
+    }
+
+    private void validateLoginField() {
+        loginOk.setVisible(loginField.getText().length() >= 4);
+    }
+
+    private void validatePasswordField() {
+        passwordOk.setVisible(passwordField.getText().length() >= 6);
+    }
+
+    @FXML
+    private void handleCreateAccount(ActionEvent event) {
+        if (loginOk.isVisible() && passwordOk.isVisible()) {
+            String login = loginField.getText();
+            String password = passwordField.getText();
+
+            // Make HTTP request to Django backend to create an account
+            Task<Void> task = new Task<Void>() {
+                @Override
+                protected Void call() throws Exception {
+                    try {
+                        URL url = new URL("http://your-django-backend-url/create_account/");
+                        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                        connection.setRequestMethod("POST");
+                        connection.setDoOutput(true);
+                        // Add parameters (login, password) to the request body
+                        // Here you would typically use JSON or other format suitable for your backend
+                        String postData = "login=" + login + "&password=" + password;
+                        connection.getOutputStream().write(postData.getBytes());
+
+                        // Handle response
+                        int responseCode = connection.getResponseCode();
+                        // Handle response based on response code
+                        if (responseCode == HttpURLConnection.HTTP_OK) {
+                            // Account created successfully
+                            System.out.println("Account created successfully");
+                        } else {
+                            // Error handling for failed account creation
+                            System.out.println("Failed to create account");
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    return null;
+                }
+            };
+
+            new Thread(task).start();
+        }
+    }
+
+    //    public void Log_out(Stage stage)
+    //    {
+    //        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+    //        alert.setTitle("Logout");
+    //        alert.setHeaderText("You're about to Logout");
+    //        //  alert.setContentText("Do You want to save before exiting?:");
+    //        if (alert.showAndWait().get()== ButtonType.OK)
+    //        {
+    //            stage.close();
+    //        }
+    //    }
+
+    //            stage.setOnCloseRequest(event ->
+    //            {
+    //                event.consume();
+    //                Log_out(stage);
+    //            });

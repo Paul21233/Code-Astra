@@ -15,78 +15,88 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/register.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/FINAL_Logo_PNG.png" />
-         </image>
-      </ImageView>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="687.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
-         <children>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="About" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" />
-               </HBox.margin>
-            </Label>
-         </children>
-         <effect>
-            <GaussianBlur />
-         </effect>
-      </HBox>
-      <PasswordField fx:id="pass1" layoutX="556.0" layoutY="590.0" prefHeight="60.0" prefWidth="405.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
-      <TextField fx:id="username" layoutX="556.0" layoutY="311.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
-      <TextField fx:id="email" layoutX="1038.0" layoutY="312.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-emailField" stylesheets="@../../styles/register.css" />
-      <TextField fx:id="phone" layoutX="554.0" layoutY="452.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
-      <DatePicker fx:id="dob" layoutX="1038.0" layoutY="453.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom_dob" stylesheets="@../../styles/register.css" />
-      <Label layoutX="556.0" layoutY="263.0" prefHeight="40.0" prefWidth="90.0" text="Name:" textFill="WHITESMOKE">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/register.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Register.registerController">
+   <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/FINAL_Logo_PNG.png" />
+   </ImageView>
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="687.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+      <effect>
+         <GaussianBlur />
+      </effect>
+      <Label fx:id="home" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home" textFill="WHITESMOKE">
          <font>
             <Font size="27.0" />
          </font>
-      </Label>
-      <Label layoutX="1038.0" layoutY="263.0" prefHeight="40.0" prefWidth="90.0" text="Email:" textFill="WHITESMOKE">
-         <font>
-            <Font size="27.0" />
-         </font>
-      </Label>
-      <Label layoutX="556.0" layoutY="407.0" prefHeight="40.0" prefWidth="97.0" text="Phone:" textFill="WHITESMOKE">
-         <font>
-            <Font size="27.0" />
-         </font>
-      </Label>
-      <Label layoutX="1038.0" layoutY="407.0" prefHeight="40.0" prefWidth="167.0" text="Date of Birth:" textFill="WHITESMOKE">
-         <font>
-            <Font size="27.0" />
-         </font>
-      </Label>
-      <Label layoutX="556.0" layoutY="540.0" prefHeight="40.0" prefWidth="131.0" text="Password:" textFill="WHITESMOKE">
-         <font>
-            <Font size="27.0" />
-         </font>
-      </Label>
-      <Button fx:id="signUp" layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
+         <HBox.margin>
+            <Insets right="60.0" />
+         </HBox.margin>
          <cursor>
             <Cursor fx:constant="HAND" />
-         </cursor></Button>
-      <CheckBox layoutX="880.0" layoutY="700.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
-   </children>
+         </cursor>
+      </Label>
+      <Label fx:id="edit" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="60.0" right="60.0" />
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="about" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="About" textFill="WHITESMOKE">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="60.0" />
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </HBox>
+   <PasswordField fx:id="password" layoutX="556.0" layoutY="590.0" prefHeight="60.0" prefWidth="405.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
+   <PasswordField fx:id="confirmPassword" layoutX="1038.0" layoutY="590.0" prefHeight="60.0" prefWidth="405.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="username" layoutX="556.0" layoutY="311.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="email" layoutX="1038.0" layoutY="312.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-emailField" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="phone" layoutX="554.0" layoutY="452.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
+   <DatePicker fx:id="dob" layoutX="1038.0" layoutY="453.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom_dob" stylesheets="@../../styles/register.css" />
+   <Label layoutX="556.0" layoutY="263.0" prefHeight="40.0" prefWidth="90.0" text="Name:" textFill="WHITESMOKE">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Label layoutX="1038.0" layoutY="263.0" prefHeight="40.0" prefWidth="90.0" text="Email:" textFill="WHITESMOKE">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Label layoutX="556.0" layoutY="407.0" prefHeight="40.0" prefWidth="97.0" text="Phone:" textFill="WHITESMOKE">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Label layoutX="1038.0" layoutY="407.0" prefHeight="40.0" prefWidth="167.0" text="Date of Birth:" textFill="WHITESMOKE">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Label layoutX="556.0" layoutY="540.0" prefHeight="40.0" prefWidth="131.0" text="Password:" textFill="WHITESMOKE">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Button fx:id="signUp" layoutX="843.0" layoutY="770.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <CheckBox fx:id="agree_tc" layoutX="880.0" layoutY="700.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
+   <Label layoutX="1038.0" layoutY="540.0" prefHeight="40.0" prefWidth="226.0" text="Confirm Password:" textFill="WHITESMOKE">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
 </AnchorPane>

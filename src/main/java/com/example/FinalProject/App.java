@@ -14,31 +14,14 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         try{
-            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/Register/register.fxml"));
-//            Scene scene = new Scene(root.load());
-            Parent scene = root.load();
-            stage.setScene(scene.getScene());
+//            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/Register/register.fxml"));
+            FXMLLoader root = new FXMLLoader(Objects.requireNonNull(App.class.getResource("/Fxml/Register/register.fxml")));
+            Scene scene = new Scene(root.load());
+            stage.setScene(scene);
             stage.show();
-            stage.setOnCloseRequest(event ->
-            {
-                event.consume();
-                Log_out(stage);
-            });
         }
         catch (Exception e){
             e.printStackTrace();
-        }
-    }
-
-    public void Log_out(Stage stage)
-    {
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setTitle("Logout");
-        alert.setHeaderText("You're about to Logout");
-        //  alert.setContentText("Do You want to save before exiting?:");
-        if (alert.showAndWait().get()== ButtonType.OK)
-        {
-            stage.close();
         }
     }
 

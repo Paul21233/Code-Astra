@@ -4,7 +4,7 @@ module com.example.FinalProject {
     requires javafx.web;
 //    requires de.jensd.fx.glyphs.fontawsome;
     requires java.sql;
-//    requires org.xerial.sqlitejdbc;
+    requires org.xerial.sqlitejdbc;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -13,6 +13,7 @@ module com.example.FinalProject {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires jbcrypt;
 
     opens com.example.FinalProject to javafx.fxml;
     exports com.example.FinalProject;
@@ -20,6 +21,9 @@ module com.example.FinalProject {
     exports com.example.FinalProject.Controllers.Admin;
     exports com.example.FinalProject.Controllers.User;
     exports com.example.FinalProject.Controllers.Login;
+    exports com.example.FinalProject.Controllers.Register;
     exports com.example.FinalProject.Models;
     exports com.example.FinalProject.Views;
+
+    opens com.example.FinalProject.Controllers.Register to javafx.fxml;
 }
