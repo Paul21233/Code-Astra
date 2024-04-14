@@ -11,76 +11,90 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1766.0" layoutY="58.0" prefHeight="50.0" prefWidth="125.0" text="Register" textFill="WHITESMOKE">
-         <font>
-            <Font size="34.0" />
-         </font>
-         <effect>
-            <Glow />
-         </effect>
-      </Label>
-      <TextField layoutX="740.0" layoutY="530.0" prefHeight="67.26" prefWidth="500.0" promptText="Enter Your Email" styleClass="custom-emailField" stylesheets="@../../styles/login.css">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </TextField>
-      <PasswordField layoutX="740.0" layoutY="667.0" prefHeight="67.26" prefWidth="500.0" promptText="Enter Your Password......" styleClass="custom-passwordField" stylesheets="@../../styles/login.css">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </PasswordField>
-      <Label layoutX="745.0" layoutY="485.0" prefHeight="40.0" prefWidth="120.0" stylesheets="@../../styles/login.css" text="Email:" textFill="WHITESMOKE">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Label>
-      <Label layoutX="744.0" layoutY="620.0" prefHeight="40.0" prefWidth="143.0" stylesheets="@../../styles/login.css" text="Password:" textFill="WHITESMOKE">
-         <font>
-            <Font size="30.0" />
-         </font>
-      </Label>
-      <TextField alignment="CENTER" editable="false" layoutX="685.0" layoutY="366.0" prefHeight="84.0" prefWidth="600.0" styleClass="custom-tfield" stylesheets="@../../styles/login.css" text="Log In to Your Existing Account">
-         <font>
-            <Font size="40.0" />
-         </font>
-      </TextField>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="651.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0" styleClass="custom-box" stylesheets="@../../styles/styles.css">
-         <children>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="About" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" />
-               </HBox.margin>
-            </Label>
-         </children>
-         <effect>
-            <GaussianBlur />
-         </effect>
-      </HBox>
-      <Button alignment="CENTER" layoutX="825.0" layoutY="766.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="350.0" styleClass="custom-button" stylesheets="@../../styles/login.css" text="Login" textFill="WHITESMOKE">
-         <font>
-            <Font size="26.0" />
-         </font>
-      </Button>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0"
+            prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/login.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1766.0" layoutY="58.0" prefHeight="50.0" prefWidth="125.0"
+          text="Register" textFill="WHITESMOKE">
+      <font>
+         <Font size="34.0"/>
+      </font>
+      <effect>
+         <Glow/>
+      </effect>
+   </Label>
+   <TextField layoutX="740.0" layoutY="530.0" prefHeight="67.26" prefWidth="500.0" promptText="Enter Your Email"
+              styleClass="custom-emailField" stylesheets="@../../styles/login.css">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </TextField>
+   <PasswordField layoutX="740.0" layoutY="667.0" prefHeight="67.26" prefWidth="500.0"
+                  promptText="Enter Your Password......" styleClass="custom-passwordField"
+                  stylesheets="@../../styles/login.css">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </PasswordField>
+   <Label layoutX="745.0" layoutY="485.0" prefHeight="40.0" prefWidth="120.0" stylesheets="@../../styles/login.css"
+          text="Email:" textFill="WHITESMOKE">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </Label>
+   <Label layoutX="744.0" layoutY="620.0" prefHeight="40.0" prefWidth="143.0" stylesheets="@../../styles/login.css"
+          text="Password:" textFill="WHITESMOKE">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </Label>
+   <TextField alignment="CENTER" editable="false" layoutX="685.0" layoutY="366.0" prefHeight="84.0" prefWidth="600.0"
+              styleClass="custom-tfield" stylesheets="@../../styles/login.css" text="Log In to Your Existing Account">
+      <font>
+         <Font size="40.0"/>
+      </font>
+   </TextField>
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="651.0" layoutY="50.0" maxHeight="-Infinity"
+         maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0"
+         styleClass="custom-box" stylesheets="@../../styles/styles.css">
+      <children>
+         <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0"
+                text="Home" textFill="WHITESMOKE">
+            <font>
+               <Font size="27.0"/>
+            </font>
+            <HBox.margin>
+               <Insets right="60.0"/>
+            </HBox.margin>
+         </Label>
+         <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0"
+                text="Edit" textFill="WHITESMOKE">
+            <font>
+               <Font size="27.0"/>
+            </font>
+            <HBox.margin>
+               <Insets left="60.0" right="60.0"/>
+            </HBox.margin>
+         </Label>
+         <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0"
+                text="About" textFill="WHITESMOKE">
+            <font>
+               <Font size="27.0"/>
+            </font>
+            <HBox.margin>
+               <Insets left="60.0"/>
+            </HBox.margin>
+         </Label>
+      </children>
+      <effect>
+         <GaussianBlur/>
+      </effect>
+   </HBox>
+   <Button alignment="CENTER" layoutX="825.0" layoutY="766.0" mnemonicParsing="false" prefHeight="50.0"
+           prefWidth="350.0" styleClass="custom-button" stylesheets="@../../styles/login.css" text="Login"
+           textFill="WHITESMOKE">
+      <font>
+         <Font size="26.0"/>
+      </font>
+   </Button>
 </AnchorPane>
