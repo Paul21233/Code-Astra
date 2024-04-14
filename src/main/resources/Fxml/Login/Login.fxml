@@ -1,100 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.GaussianBlur?>
-<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0"
-            prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/login.css"
-            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1766.0" layoutY="58.0" prefHeight="50.0" prefWidth="125.0"
-          text="Register" textFill="WHITESMOKE">
-      <font>
-         <Font size="34.0"/>
-      </font>
-      <effect>
-         <Glow/>
-      </effect>
-   </Label>
-   <TextField layoutX="740.0" layoutY="530.0" prefHeight="67.26" prefWidth="500.0" promptText="Enter Your Email"
-              styleClass="custom-emailField" stylesheets="@../../styles/login.css">
-      <font>
-         <Font size="30.0"/>
-      </font>
-   </TextField>
-   <PasswordField layoutX="740.0" layoutY="667.0" prefHeight="67.26" prefWidth="500.0"
-                  promptText="Enter Your Password......" styleClass="custom-passwordField"
-                  stylesheets="@../../styles/login.css">
-      <font>
-         <Font size="30.0"/>
-      </font>
-   </PasswordField>
-   <Label layoutX="745.0" layoutY="485.0" prefHeight="40.0" prefWidth="120.0" stylesheets="@../../styles/login.css"
-          text="Email:" textFill="WHITESMOKE">
-      <font>
-         <Font size="30.0"/>
-      </font>
-   </Label>
-   <Label layoutX="744.0" layoutY="620.0" prefHeight="40.0" prefWidth="143.0" stylesheets="@../../styles/login.css"
-          text="Password:" textFill="WHITESMOKE">
-      <font>
-         <Font size="30.0"/>
-      </font>
-   </Label>
-   <TextField alignment="CENTER" editable="false" layoutX="685.0" layoutY="366.0" prefHeight="84.0" prefWidth="600.0"
-              styleClass="custom-tfield" stylesheets="@../../styles/login.css" text="Log In to Your Existing Account">
-      <font>
-         <Font size="40.0"/>
-      </font>
-   </TextField>
-   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="651.0" layoutY="50.0" maxHeight="-Infinity"
-         maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0"
-         styleClass="custom-box" stylesheets="@../../styles/styles.css">
-      <children>
-         <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0"
-                text="Home" textFill="WHITESMOKE">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="342.0" style="-fx-background-color: 2d2d2d;"
+                  BorderPane.alignment="CENTER">
+         <ImageView fitHeight="610.0" fitWidth="429.0" layoutX="-66.0" layoutY="-4.0" pickOnBounds="true">
+            <Image url="@../../image/color.png"/>
+         </ImageView>
+         <Button fx:id="loginbtn" alignment="CENTER" layoutX="82.0" layoutY="420.0" mnemonicParsing="false"
+                 prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: 2d2d2d;" text="Login">
             <font>
-               <Font size="27.0"/>
+               <Font name="SFUIDisplay-Regular" size="18.0"/>
             </font>
-            <HBox.margin>
-               <Insets right="60.0"/>
-            </HBox.margin>
-         </Label>
-         <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0"
-                text="Edit" textFill="WHITESMOKE">
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+         <TextField fx:id="usernamField" layoutX="15.0" layoutY="282.0" prefHeight="38.0" prefWidth="245.0"/>
+         <Text fill="WHITE" layoutX="15.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Email/Username: " textAlignment="CENTER" wrappingWidth="139.314453125">
             <font>
-               <Font size="27.0"/>
+               <Font name="SFUIDisplay-Regular" size="18.0"/>
             </font>
-            <HBox.margin>
-               <Insets left="60.0" right="60.0"/>
-            </HBox.margin>
-         </Label>
-         <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0"
-                text="About" textFill="WHITESMOKE">
+         </Text>
+         <Text fill="WHITE" layoutX="15.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:"
+               textAlignment="CENTER">
             <font>
-               <Font size="27.0"/>
+               <Font name="SFUIDisplay-Regular" size="18.0"/>
             </font>
-            <HBox.margin>
-               <Insets left="60.0"/>
-            </HBox.margin>
+         </Text>
+         <PasswordField fx:id="passField" layoutX="15.0" layoutY="360.0" prefHeight="38.0" prefWidth="245.0"/>
+         <Text fill="WHITE" layoutX="-9.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Don't have an account? " textAlignment="CENTER">
+            <font>
+               <Font size="16.0"/>
+            </font>
+         </Text>
+         <Button fx:id="registerbtn" layoutX="171.0" layoutY="493.0" mnemonicParsing="false" prefHeight="25.0"
+                 prefWidth="100.0" style="-fx-background-color: 2d2d2d;" text="Register Here! ">
+            <font>
+               <Font size="11.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="107.0" prefHeight="93.0"
+                prefWidth="196.0" text="Login to Your Existing Account" textAlignment="CENTER" textFill="WHITESMOKE"
+                wrapText="true">
+            <font>
+               <Font name="SFUIDisplay-Regular" size="22.0"/>
+            </font>
          </Label>
-      </children>
-      <effect>
-         <GaussianBlur/>
-      </effect>
-   </HBox>
-   <Button alignment="CENTER" layoutX="825.0" layoutY="766.0" mnemonicParsing="false" prefHeight="50.0"
-           prefWidth="350.0" styleClass="custom-button" stylesheets="@../../styles/login.css" text="Login"
-           textFill="WHITESMOKE">
-      <font>
-         <Font size="26.0"/>
-      </font>
-   </Button>
-</AnchorPane>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="410.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+         <ImageView fitHeight="623.0" fitWidth="370.0" layoutY="-20.0" opacity="0.86" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@../../image/backgroound2.jpg"/>
+         </ImageView>
+         <ImageView fitHeight="138.0" fitWidth="195.0" layoutX="81.0" layoutY="148.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@../../image/FINAL_Logo_PNG.png"/>
+         </ImageView>
+         <Text fill="WHITE" layoutX="95.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Grow with Astra! " textAlignment="CENTER" wrappingWidth="166.990234375">
+            <font>
+               <Font size="21.0"/>
+            </font>
+         </Text>
+         <Text fill="WHITE" layoutX="70.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="For any queries visit codeastra.com" textAlignment="CENTER" wrappingWidth="228.021484375">
+            <font>
+               <Font size="13.0"/>
+            </font>
+         </Text>
+      </AnchorPane>
+   </center>
+</BorderPane>
