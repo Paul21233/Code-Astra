@@ -7,5 +7,5 @@
 
 .background-image{
     -fx-background-image: url("../image/color.png");
-    -fx-background-size: ;
+    -fx-background-size: var();
 }
