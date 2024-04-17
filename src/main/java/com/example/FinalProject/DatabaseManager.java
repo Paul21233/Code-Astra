@@ -6,21 +6,23 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class DatabaseManager {
-    private static final String URL = "jdbc:mysql://localhost:3306/mydatabase";
-    private static final String USER = "username";
-    private static final String PASSWORD = "password";
 
-    public static void registerUser(String username, String password, String email, String phone, String dob) throws SQLException {
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String sql = "INSERT INTO user (username, password, email, phone, dob) VALUES (?, ?, ?, ?, ?)";
-            try (PreparedStatement statement = conn.prepareStatement(sql)) {
-                statement.setString(1, username);
-                statement.setString(2, password);
-                statement.setString(4, email);
-                statement.setString(5, phone);
-                statement.setString(6, dob);
-                statement.executeUpdate();
-            }
+    public Connection databaseConnection;
+
+    public Connection getConnection() {
+        String databaseName = "CodeAstra";
+        String username = "root";
+        String password = "pizza123";
+        String url = "jdbc:mysql://localhost:3307/" + databaseName;
+
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            databaseConnection = DriverManager.getConnection(url, username, password);
         }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return databaseConnection;
     }
 }

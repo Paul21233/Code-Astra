@@ -14,6 +14,7 @@ module com.example.FinalProject {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires jbcrypt;
+    requires mysql.connector.j;
 
     opens com.example.FinalProject to javafx.fxml;
     exports com.example.FinalProject;
