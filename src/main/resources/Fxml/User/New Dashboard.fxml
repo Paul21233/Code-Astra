@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane opacity="0.92" prefHeight="800.0" prefWidth="1000.0" stylesheets="@../../styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Fxml.User.NewDashboard">
+   <children>
+      <ImageView fitHeight="659.0" fitWidth="971.0" layoutX="15.0" layoutY="127.0">
+         <image>
+            <Image url="@../../image/backgroound3%20copy%20copy.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="136.0" fitWidth="432.0" layoutX="39.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/Rectangle%2013.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="79.0" layoutX="73.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/Ellipse%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="66.0" fitWidth="78.0" layoutX="79.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/Male%20User.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="321.0" fitWidth="440.0" layoutX="38.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Rectangle%203.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="73.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/Male%20User.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="73.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/Male%20User.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Rectangle%2013.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Rectangle%2013.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Rectangle%2013.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="352.0" layoutX="324.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Rectangle%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="88.0" fitWidth="160.0" layoutX="45.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Code_Astra%20Logo%20OG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="78.0" layoutX="545.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/HackerRank_logo%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="545.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/LeetCode_logo_black%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="99.0" layoutX="535.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/loj-og-image-removebg-preview%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="918.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/Male%20User.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="354.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="458.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How it works">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="615.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FAQ's">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="381.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="391.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="01">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="164.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="74.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ahmad ">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="77.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sowrin">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="145.0" layoutY="349.0" prefHeight="99.0" prefWidth="281.0" text="Give text here " />
+      <TextField layoutX="145.0" layoutY="482.0" prefHeight="103.0" prefWidth="281.0" text="Give text here " />
+      <Text fill="WHITE" layoutX="812.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Dashboard">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="762.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Bar">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="762.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Bar">
+         <font>
+            <Font name="SFUIDisplay-Regular" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="762.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Bar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+   <styleClass>
+      <String fx:value="backgroundimage" />
+      <String fx:value="backgroundColor" />
+   </styleClass>
+</AnchorPane>
