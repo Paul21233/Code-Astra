@@ -146,6 +146,11 @@
           <artifactId>jetty-webapp</artifactId>
           <version>9.4.46.v20220331</version>
       </dependency>
+      <dependency>
+          <groupId>org.glassfish.jaxb</groupId>
+          <artifactId>jaxb-runtime</artifactId>
+          <version>2.3.1</version>
+      </dependency>
   </dependencies>
 
   <build>
