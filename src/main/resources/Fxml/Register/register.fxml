@@ -15,17 +15,17 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/register.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Register.registerController">
-   <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="backgroundColor" stylesheets="@../../styles/register.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Register.registerController">
+   <ImageView fitHeight="78.0" fitWidth="141.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../../image/FINAL_Logo_PNG.png" />
    </ImageView>
-   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="687.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="300.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
       <effect>
          <GaussianBlur />
       </effect>
-      <Label fx:id="home" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home" textFill="WHITESMOKE">
+      <Label fx:id="home" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="106.0" text="Home" textFill="WHITESMOKE">
          <font>
-            <Font size="27.0" />
+            <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
          <HBox.margin>
             <Insets right="60.0" />
@@ -34,9 +34,9 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label fx:id="edit" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
+      <Label fx:id="edit" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="140.0" text="How it works" textFill="WHITESMOKE">
          <font>
-            <Font size="27.0" />
+            <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
          <HBox.margin>
             <Insets left="60.0" right="60.0" />
@@ -45,9 +45,9 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label fx:id="about" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="About" textFill="WHITESMOKE">
+      <Label fx:id="about" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="98.0" text="FAQ's" textFill="WHITESMOKE">
          <font>
-            <Font size="27.0" />
+            <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
          <HBox.margin>
             <Insets left="60.0" />
@@ -57,40 +57,53 @@
          </cursor>
       </Label>
    </HBox>
-   <PasswordField fx:id="password" layoutX="556.0" layoutY="590.0" prefHeight="60.0" prefWidth="405.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
-   <TextField fx:id="username" layoutX="556.0" layoutY="311.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
-   <TextField fx:id="email" layoutX="1038.0" layoutY="312.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-emailField" stylesheets="@../../styles/register.css" />
-   <TextField fx:id="phone" layoutX="554.0" layoutY="452.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
-   <DatePicker fx:id="dob" layoutX="1038.0" layoutY="453.0" prefHeight="60.0" prefWidth="400.0" styleClass="custom_dob" stylesheets="@../../styles/register.css" />
-   <Label layoutX="556.0" layoutY="263.0" prefHeight="40.0" prefWidth="90.0" text="Name:" textFill="WHITESMOKE">
+   <PasswordField fx:id="password" layoutX="325.0" layoutY="557.0" prefHeight="43.0" prefWidth="377.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="username" layoutX="325.0" layoutY="240.0" prefHeight="46.0" prefWidth="377.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="email" layoutX="325.0" layoutY="321.0" prefHeight="46.0" prefWidth="377.0" styleClass="custom-emailField" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="phone" layoutX="325.0" layoutY="404.0" prefHeight="46.0" prefWidth="377.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
+   <DatePicker fx:id="dob" layoutX="325.0" layoutY="481.0" prefHeight="19.0" prefWidth="377.0" styleClass="custom_dob" stylesheets="@../../styles/register.css" />
+   <Label layoutX="334.0" layoutY="243.0" prefHeight="40.0" prefWidth="51.0" text="Name" textFill="#c9c9c9">
       <font>
-         <Font size="27.0" />
+         <Font name="SFUIDisplay-Regular" size="17.0" />
       </font>
    </Label>
-   <Label layoutX="1038.0" layoutY="263.0" prefHeight="40.0" prefWidth="90.0" text="Email:" textFill="WHITESMOKE">
+   <Label layoutX="334.0" layoutY="324.0" prefHeight="40.0" prefWidth="51.0" text="Email" textFill="#c9c9c9">
       <font>
-         <Font size="27.0" />
+         <Font size="17.0" />
       </font>
    </Label>
-   <Label layoutX="556.0" layoutY="407.0" prefHeight="40.0" prefWidth="97.0" text="Phone:" textFill="WHITESMOKE">
+   <Label layoutX="334.0" layoutY="407.0" prefHeight="40.0" prefWidth="51.0" text="Phone" textFill="#c9c9c9">
       <font>
-         <Font size="27.0" />
+         <Font size="17.0" />
       </font>
    </Label>
-   <Label layoutX="1038.0" layoutY="407.0" prefHeight="40.0" prefWidth="167.0" text="Date of Birth:" textFill="WHITESMOKE">
+   <Label layoutX="333.0" layoutY="484.0" prefHeight="40.0" prefWidth="97.0" text="Date of Birth" textFill="#c9c9c9">
       <font>
-         <Font size="27.0" />
+         <Font size="17.0" />
       </font>
    </Label>
-   <Label layoutX="556.0" layoutY="540.0" prefHeight="40.0" prefWidth="131.0" text="Password:" textFill="WHITESMOKE">
+   <Label layoutX="334.0" layoutY="561.0" prefHeight="40.0" prefWidth="97.0" text="Password" textFill="#c9c9c9">
       <font>
-         <Font size="27.0" />
+         <Font name="SFUIDisplay-Regular" size="17.0" />
       </font>
    </Label>
-   <Button fx:id="signUp" layoutX="843.0" layoutY="770.0" mnemonicParsing="false" onAction="#handleCreateAccount" prefHeight="50.0" prefWidth="310.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
+   <Button fx:id="signUp" layoutX="430.0" layoutY="671.0" mnemonicParsing="false" onAction="#handleCreateAccount" prefHeight="30.0" prefWidth="178.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
+      <font>
+         <Font name="SFUIDisplay-Regular" size="12.0" />
+      </font>
    </Button>
-   <CheckBox fx:id="agree_tc" layoutX="880.0" layoutY="700.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
+   <CheckBox fx:id="agree_tc" layoutX="419.0" layoutY="610.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
+   <ImageView fitHeight="582.0" fitWidth="495.0" layoutX="259.0" layoutY="190.0" opacity="0.76">
+      <image>
+         <Image url="@../../image/sign%20up%20box.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="894.0" layoutY="58.0" text="Login" textFill="WHITE">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="18.0" />
+      </font>
+   </Label>
 </AnchorPane>
