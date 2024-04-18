@@ -28,7 +28,7 @@
             <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
          <HBox.margin>
-            <Insets right="60.0" />
+            <Insets right="40.0" />
          </HBox.margin>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -39,7 +39,7 @@
             <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
          <HBox.margin>
-            <Insets left="60.0" right="60.0" />
+            <Insets left="40.0" right="40.0" />
          </HBox.margin>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -50,43 +50,29 @@
             <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
          <HBox.margin>
-            <Insets left="60.0" />
+            <Insets left="40.0" />
          </HBox.margin>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
    </HBox>
-   <PasswordField fx:id="password" layoutX="325.0" layoutY="557.0" prefHeight="43.0" prefWidth="377.0" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
-   <TextField fx:id="username" layoutX="325.0" layoutY="240.0" prefHeight="46.0" prefWidth="377.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
-   <TextField fx:id="email" layoutX="325.0" layoutY="321.0" prefHeight="46.0" prefWidth="377.0" styleClass="custom-emailField" stylesheets="@../../styles/register.css" />
-   <TextField fx:id="phone" layoutX="325.0" layoutY="404.0" prefHeight="46.0" prefWidth="377.0" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
-   <DatePicker fx:id="dob" layoutX="325.0" layoutY="481.0" prefHeight="19.0" prefWidth="377.0" styleClass="custom_dob" stylesheets="@../../styles/register.css" />
-   <Label layoutX="334.0" layoutY="243.0" prefHeight="40.0" prefWidth="51.0" text="Name" textFill="#c9c9c9">
+   <ImageView fitHeight="582.0" fitWidth="495.0" layoutX="259.0" layoutY="190.0" opacity="0.76">
+      <image>
+         <Image url="@../../image/sign up box.png" />
+      </image>
+   </ImageView>
+   <CheckBox fx:id="agree_tc" layoutX="419.0" layoutY="610.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
+   <Label layoutX="894.0" layoutY="58.0" text="Login" textFill="WHITE">
       <font>
-         <Font name="SFUIDisplay-Regular" size="17.0" />
+         <Font name="SFUIDisplay-Regular" size="18.0" />
       </font>
    </Label>
-   <Label layoutX="334.0" layoutY="324.0" prefHeight="40.0" prefWidth="51.0" text="Email" textFill="#c9c9c9">
-      <font>
-         <Font size="17.0" />
-      </font>
-   </Label>
-   <Label layoutX="334.0" layoutY="407.0" prefHeight="40.0" prefWidth="51.0" text="Phone" textFill="#c9c9c9">
-      <font>
-         <Font size="17.0" />
-      </font>
-   </Label>
-   <Label layoutX="333.0" layoutY="484.0" prefHeight="40.0" prefWidth="97.0" text="Date of Birth" textFill="#c9c9c9">
-      <font>
-         <Font size="17.0" />
-      </font>
-   </Label>
-   <Label layoutX="334.0" layoutY="561.0" prefHeight="40.0" prefWidth="97.0" text="Password" textFill="#c9c9c9">
-      <font>
-         <Font name="SFUIDisplay-Regular" size="17.0" />
-      </font>
-   </Label>
+   <TextField fx:id="username" layoutX="325.0" layoutY="240.0" prefHeight="46.0" prefWidth="377.0" promptText="Name" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="email" layoutX="325.0" layoutY="321.0" prefHeight="46.0" prefWidth="377.0" promptText="Email" styleClass="custom-emailField" stylesheets="@../../styles/register.css" />
+   <TextField fx:id="phone" layoutX="325.0" layoutY="404.0" prefHeight="46.0" prefWidth="377.0" promptText="Phone Number" styleClass="custom-tfield" stylesheets="@../../styles/register.css" />
+   <PasswordField fx:id="password" layoutX="325.0" layoutY="557.0" prefHeight="43.0" prefWidth="377.0" promptText="Password" styleClass="custom-passwordField" stylesheets="@../../styles/register.css" />
+   <DatePicker fx:id="dob" layoutX="325.0" layoutY="481.0" prefHeight="19.0" prefWidth="377.0" promptText="Enter Your  Birth Date" styleClass="custom_dob" stylesheets="@../../styles/register.css" />
    <Button fx:id="signUp" layoutX="430.0" layoutY="671.0" mnemonicParsing="false" onAction="#handleCreateAccount" prefHeight="30.0" prefWidth="178.0" styleClass="custom-button" stylesheets="@../../styles/register.css" text="Sign Up">
       <cursor>
          <Cursor fx:constant="HAND" />
@@ -95,15 +81,4 @@
          <Font name="SFUIDisplay-Regular" size="12.0" />
       </font>
    </Button>
-   <CheckBox fx:id="agree_tc" layoutX="419.0" layoutY="610.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="I agree to the terms &amp; conditions" textFill="WHITESMOKE" />
-   <ImageView fitHeight="582.0" fitWidth="495.0" layoutX="259.0" layoutY="190.0" opacity="0.76">
-      <image>
-         <Image url="@../../image/sign%20up%20box.png" />
-      </image>
-   </ImageView>
-   <Label layoutX="894.0" layoutY="58.0" text="Login" textFill="WHITE">
-      <font>
-         <Font name="SFUIDisplay-Regular" size="18.0" />
-      </font>
-   </Label>
 </AnchorPane>

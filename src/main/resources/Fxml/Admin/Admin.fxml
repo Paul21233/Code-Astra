@@ -1,14 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.FinalProject.Controllers.Admin.AdminController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="800.0" prefWidth="1080.0" styleClass="adminBackground" stylesheets="@../../styles/admin.css"
+            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.FinalProject.Controllers.Admin.AdminController">
+   <ImageView fitHeight="647.0" fitWidth="1051.0" layoutX="15.0" layoutY="228.0" AnchorPane.bottomAnchor="15.0"
+              AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+      <Image url="@../../image/color.png"/>
+   </ImageView>
+   <ImageView fitHeight="97.0" fitWidth="159.0" layoutX="26.0" layoutY="28.0">
+      <Image url="@../../image/FINAL_Logo_PNG.png"/>
+   </ImageView>
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="293.0" layoutY="50.0" maxHeight="-Infinity"
+         maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="462.0"
+         styleClass="custom-box" stylesheets="@../../styles/admin.css">
+      <effect>
+         <GaussianBlur/>
+      </effect>
+      <Label fx:id="homebtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
+             prefWidth="89.0" text="Home" textFill="WHITESMOKE">
+         <font>
+            <Font size="27.0"/>
+         </font>
+         <HBox.margin>
+            <Insets right="40.0"/>
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Label>
+      <Label fx:id="editbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
+             prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
+         <font>
+            <Font size="27.0"/>
+         </font>
+         <HBox.margin>
+            <Insets left="40.0" right="40.0"/>
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Label>
+      <Label fx:id="aboutbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
+             prefWidth="89.0" text="About" textFill="WHITESMOKE">
+         <font>
+            <Font size="27.0"/>
+         </font>
+         <HBox.margin>
+            <Insets left="40.0"/>
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND"/>
+         </cursor>
+      </Label>
+   </HBox>
+   <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="989.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </ImageView>
+   <Label layoutX="899.0" layoutY="37.0" text="Admin" textFill="WHITESMOKE">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="20.0"/>
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </Label>
+   <MenuButton layoutX="878.0" layoutY="65.0" mnemonicParsing="false" text="MenuButton">
+      <items>
+         <MenuItem mnemonicParsing="false" text="Action 1"/>
+         <MenuItem mnemonicParsing="false" text="Action 2"/>
+      </items>
+      <font>
+         <Font name="SFUIDisplay-Regular" size="12.0"/>
+      </font>
+   </MenuButton>
 </AnchorPane>
