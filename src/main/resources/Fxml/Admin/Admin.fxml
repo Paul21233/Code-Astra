@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
@@ -11,81 +12,133 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="800.0" prefWidth="1080.0" styleClass="adminBackground" stylesheets="@../../styles/admin.css"
-            xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.FinalProject.Controllers.Admin.AdminController">
-   <ImageView fitHeight="647.0" fitWidth="1051.0" layoutX="15.0" layoutY="228.0" AnchorPane.bottomAnchor="15.0"
-              AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
-      <Image url="@../../image/color.png"/>
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" styleClass="adminBackground" stylesheets="@../../styles/admin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Admin.AdminController">
+   <ImageView fitHeight="572.0" fitWidth="934.0" layoutX="74.0" layoutY="190.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="65.0">
+      <Image url="@../../image/color.png" />
    </ImageView>
-   <ImageView fitHeight="97.0" fitWidth="159.0" layoutX="26.0" layoutY="28.0">
-      <Image url="@../../image/FINAL_Logo_PNG.png"/>
-   </ImageView>
-   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="293.0" layoutY="50.0" maxHeight="-Infinity"
-         maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="462.0"
-         styleClass="custom-box" stylesheets="@../../styles/admin.css">
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="311.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/admin.css">
       <effect>
-         <GaussianBlur/>
+         <GaussianBlur />
       </effect>
-      <Label fx:id="homebtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
-             prefWidth="89.0" text="Home" textFill="WHITESMOKE">
+      <Label fx:id="homebtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home " textFill="WHITESMOKE">
          <font>
-            <Font size="27.0"/>
+            <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
          <HBox.margin>
-            <Insets right="40.0"/>
+            <Insets right="40.0" />
          </HBox.margin>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+            <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label fx:id="editbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
-             prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
+      <Label fx:id="editbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="How it works" textFill="WHITESMOKE">
          <font>
-            <Font size="27.0"/>
+            <Font size="15.0" />
          </font>
          <HBox.margin>
-            <Insets left="40.0" right="40.0"/>
+            <Insets left="40.0" right="40.0" />
          </HBox.margin>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+            <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <Label fx:id="aboutbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0"
-             prefWidth="89.0" text="About" textFill="WHITESMOKE">
+      <Label fx:id="aboutbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="FAQ's" textFill="WHITESMOKE">
          <font>
-            <Font size="27.0"/>
+            <Font size="15.0" />
          </font>
          <HBox.margin>
-            <Insets left="40.0"/>
+            <Insets left="40.0" />
          </HBox.margin>
          <cursor>
-            <Cursor fx:constant="HAND"/>
+            <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
    </HBox>
    <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="989.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
       <cursor>
-         <Cursor fx:constant="HAND"/>
+         <Cursor fx:constant="HAND" />
       </cursor>
    </ImageView>
-   <Label layoutX="899.0" layoutY="37.0" text="Admin" textFill="WHITESMOKE">
+   <Label layoutX="909.0" layoutY="68.0" text="Admin" textFill="WHITESMOKE">
       <font>
-         <Font name="SFUIDisplay-Regular" size="20.0"/>
+         <Font name="SFUIDisplay-Regular" size="19.0" />
       </font>
       <cursor>
-         <Cursor fx:constant="HAND"/>
+         <Cursor fx:constant="HAND" />
       </cursor>
    </Label>
-   <MenuButton layoutX="878.0" layoutY="65.0" mnemonicParsing="false" text="MenuButton">
+   <MenuButton layoutX="984.0" layoutY="68.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="33.0">
       <items>
-         <MenuItem mnemonicParsing="false" text="Action 1"/>
-         <MenuItem mnemonicParsing="false" text="Action 2"/>
+         <MenuItem mnemonicParsing="false" text="Action 1" />
+         <MenuItem mnemonicParsing="false" text="Action 2" />
       </items>
       <font>
-         <Font name="SFUIDisplay-Regular" size="12.0"/>
+         <Font name="SFUIDisplay-Regular" size="12.0" />
       </font>
    </MenuButton>
+   <ImageView fitHeight="78.0" fitWidth="141.0" layoutX="43.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/FINAL_Logo_PNG.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="203.0" fitWidth="273.0" layoutX="122.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Rectangle%203.png" />
+      </image>
+   </ImageView>
+   <Text fill="WHITE" layoutX="155.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Community Settings">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="23.0" />
+      </font>
+   </Text>
+   <Button layoutX="236.0" layoutY="516.0" mnemonicParsing="false" text="GO" />
+   <ImageView fitHeight="78.0" fitWidth="73.0" layoutX="220.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Users.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="203.0" fitWidth="273.0" layoutX="406.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Rectangle%203.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="506.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Admin%20Settings%20Male.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="203.0" fitWidth="273.0" layoutX="690.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Rectangle%203.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="794.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Chat%20Settings.png" />
+      </image>
+   </ImageView>
+   <Text fill="WHITE" layoutX="468.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Settings">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="23.0" />
+      </font>
+   </Text>
+   <Button layoutX="526.0" layoutY="515.0" mnemonicParsing="false" text="GO" />
+   <Text fill="WHITE" layoutX="761.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat Settings">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="23.0" />
+      </font>
+   </Text>
+   <Button layoutX="808.0" layoutY="514.0" mnemonicParsing="false" text="GO" />
+   <ImageView fitHeight="78.0" fitWidth="244.0" layoutX="415.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Rectangle%2013.png" />
+      </image>
+   </ImageView>
+   <Text fill="WHITE" layoutX="450.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="23.0" />
+      </font>
+   </Text>
 </AnchorPane>
