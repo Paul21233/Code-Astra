@@ -12,40 +12,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="687.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0" styleClass="custom-box" stylesheets="@../../styles/page2.css">
-         <children>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="About" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" />
-               </HBox.margin>
-            </Label>
-         </children>
-         <effect>
-            <GaussianBlur />
-         </effect>
-      </HBox>
-      <Button layoutX="130.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
+      <Button layoutX="62.0" layoutY="373.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="43.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
          <font>
             <Font size="25.0" />
          </font>
@@ -53,7 +22,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="300.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C++" textFill="WHITESMOKE">
+      <Button layoutX="130.0" layoutY="373.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="89.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C++" textFill="WHITESMOKE">
          <font>
             <Font size="25.0" />
          </font>
@@ -61,7 +30,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="470.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="HTML" textFill="WHITESMOKE">
+      <Button layoutX="233.0" layoutY="373.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="107.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="HTML" textFill="WHITESMOKE">
          <font>
             <Font size="25.0" />
          </font>
@@ -69,7 +38,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="640.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Python" textFill="WHITESMOKE">
+      <Button layoutX="353.0" layoutY="373.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="115.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Python" textFill="WHITESMOKE">
          <font>
             <Font size="25.0" />
          </font>
@@ -77,7 +46,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="130.0" layoutY="740.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Java" textFill="WHITESMOKE">
+      <Button layoutX="166.0" layoutY="443.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="89.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Java" textFill="WHITESMOKE">
          <font>
             <Font size="25.0" />
          </font>
@@ -85,7 +54,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="300.0" layoutY="740.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="CSS" textFill="WHITESMOKE">
+      <Button layoutX="63.0" layoutY="443.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="89.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="CSS" textFill="WHITESMOKE">
          <font>
             <Font size="25.0" />
          </font>
@@ -93,19 +62,14 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="130.0" layoutY="380.0" prefHeight="196.0" prefWidth="637.0" text="What language do you want to learn?" textFill="WHITESMOKE" wrapText="true">
+      <Label layoutX="62.0" layoutY="307.0" prefHeight="45.0" prefWidth="663.0" text="What language do you want to learn?" textFill="WHITESMOKE" wrapText="true">
          <font>
-            <Font size="63.0" />
+            <Font name="SFUIDisplay-Regular" size="28.0" />
          </font>
       </Label>
       <ImageView cache="true" cacheHint="SPEED" fitHeight="230.0" fitWidth="340.0" layoutX="1504.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
-      <TextArea blendMode="DARKEN" depthTest="DISABLE" editable="false" layoutX="1500.0" layoutY="540.0" prefHeight="300.0" prefWidth="340.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" wrapText="true" />
-      <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/FINAL_Logo_PNG.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="1628.0" layoutY="840.0" maxHeight="115.0" maxWidth="115.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="115.0" styleClass="custom-circle-button" stylesheets="@../../styles/page2.css" text="Button" textFill="WHITESMOKE">
+      <TextArea blendMode="DARKEN" depthTest="DISABLE" editable="false" layoutX="642.0" layoutY="233.0" prefHeight="300.0" prefWidth="303.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" wrapText="true" />
+      <Button layoutX="793.0" layoutY="630.0" maxHeight="115.0" maxWidth="115.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="115.0" styleClass="custom-circle-button" stylesheets="@../../styles/page2.css" text="Button" textFill="WHITESMOKE">
          <font>
             <Font size="24.0" />
          </font>
@@ -113,5 +77,51 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <ImageView fitHeight="78.0" fitWidth="141.0" layoutX="34.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/FINAL_Logo_PNG.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="287.0" layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/admin.css">
+         <effect>
+            <GaussianBlur />
+         </effect>
+         <children>
+            <Label fx:id="homebtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home " textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="editbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="How it works" textFill="WHITESMOKE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="aboutbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="FAQ's" textFill="WHITESMOKE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </HBox>
+      <Button layoutX="893.0" layoutY="80.0" mnemonicParsing="false" text="Login" />
    </children>
 </AnchorPane>
