@@ -1,92 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane opacity="0.92" prefHeight="800.0" prefWidth="1000.0" stylesheets="@../../styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.User.dashboardController">
-    <styleClass>
-        <String fx:value="backgroundimage" />
-        <String fx:value="backgroundColor" />
-    </styleClass>
-    <ImageView fitHeight="659.0" fitWidth="971.0" layoutX="15.0" layoutY="127.0">
-        <Image url="@../../image/backgroound3 copy copy.jpg"/>
+<AnchorPane opacity="0.92" prefHeight="699.0" prefWidth="1000.0" styleClass="backgroundColor" stylesheets="@../../styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.User.dashboardController">
+    <ImageView fitHeight="545.0" fitWidth="971.0" layoutX="15.0" layoutY="127.0">
+        <Image url="@../../image/backgroound3 copy copy.jpg" />
     </ImageView>
-    <ImageView fitHeight="136.0" fitWidth="432.0" layoutX="39.0" layoutY="154.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/Rectangle 13.png"/>
+    <ImageView fitHeight="136.0" fitWidth="432.0" layoutX="39.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/Rectangle 13.png" />
     </ImageView>
     <ImageView fitHeight="78.0" fitWidth="79.0" layoutX="73.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../image/Ellipse 3.png"/>
+        <Image url="@../../image/Ellipse 3.png" />
     </ImageView>
-    <ImageView fx:id="profilePicMain" fitHeight="66.0" fitWidth="78.0" layoutX="79.0" layoutY="181.0"
-               pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../image/Male User.png"/>
+    <ImageView fx:id="profilePicMain" fitHeight="66.0" fitWidth="78.0" layoutX="79.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/Male User.png" />
     </ImageView>
-    <ImageView fitHeight="321.0" fitWidth="440.0" layoutX="38.0" layoutY="320.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/Rectangle 3.png"/>
+    <ImageView fitHeight="321.0" fitWidth="440.0" layoutX="38.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/Rectangle 3.png" />
     </ImageView>
     <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="73.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../image/Male User.png"/>
+        <Image url="@../../image/Male User.png" />
     </ImageView>
     <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="73.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../image/Male User.png"/>
+        <Image url="@../../image/Male User.png" />
     </ImageView>
-    <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="163.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/Rectangle 13.png"/>
+    <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/Rectangle 13.png" />
     </ImageView>
-    <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="326.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/Rectangle 13.png"/>
+    <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/Rectangle 13.png" />
     </ImageView>
-    <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="481.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/Rectangle 13.png"/>
-    </ImageView>
-    <ImageView fitHeight="46.0" fitWidth="352.0" layoutX="324.0" layoutY="43.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/Rectangle 1.png"/>
+    <ImageView fitHeight="103.0" fitWidth="326.0" layoutX="638.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/Rectangle 13.png" />
     </ImageView>
     <ImageView fitHeight="88.0" fitWidth="160.0" layoutX="45.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
-        <Image url="@../../image/Code_Astra Logo OG.png"/>
+        <Image url="@../../image/Code_Astra Logo OG.png" />
     </ImageView>
-    <ImageView fitHeight="60.0" fitWidth="78.0" layoutX="545.0" layoutY="185.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/HackerRank_logo 1.png"/>
+    <ImageView fitHeight="60.0" fitWidth="78.0" layoutX="545.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/HackerRank_logo 1.png" />
     </ImageView>
-    <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="545.0" layoutY="338.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/LeetCode_logo_black 1.png"/>
+    <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="545.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/LeetCode_logo_black 1.png" />
     </ImageView>
-    <ImageView fitHeight="103.0" fitWidth="99.0" layoutX="535.0" layoutY="483.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/loj-og-image-removebg-preview 1.png"/>
+    <ImageView fitHeight="103.0" fitWidth="99.0" layoutX="535.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/loj-og-image-removebg-preview 1.png" />
     </ImageView>
-    <ImageView fx:id="profilePic" fitHeight="46.0" fitWidth="46.0" layoutX="918.0" layoutY="41.0" pickOnBounds="true"
-               preserveRatio="true">
-        <Image url="@../../image/Male User.png"/>
+    <ImageView fx:id="profilePic" fitHeight="46.0" fitWidth="46.0" layoutX="924.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../../image/Male User.png" />
     </ImageView>
-    <Text fx:id="home" fill="WHITE" layoutX="354.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="15.0" />
-        </font>
-    </Text>
-    <Text fx:id="hiw" fill="WHITE" layoutX="458.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How it works">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="15.0" />
-        </font>
-    </Text>
-    <Text fx:id="faq" fill="WHITE" layoutX="615.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FAQ's">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="15.0" />
-        </font>
-    </Text>
     <Text fill="WHITE" layoutX="380.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
         <font>
             <Font name="SFUIDisplay-Regular" size="20.0" />
@@ -97,41 +68,48 @@
             <Font name="SFUIDisplay-Regular" size="21.0" />
         </font>
     </Text>
-    <Text fx:id="username" fill="WHITE" layoutX="164.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="15.0" />
-        </font>
-    </Text>
-    <Text fill="WHITE" layoutX="74.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ahmad ">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="13.0" />
-        </font>
-    </Text>
-    <Text fill="WHITE" layoutX="77.0" layoutY="561.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sowrin">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="13.0" />
-        </font>
-    </Text>
     <TextField fx:id="msgBox1" layoutX="145.0" layoutY="349.0" prefHeight="99.0" prefWidth="281.0" text="Give text here " />
     <TextField fx:id="msgBox2" layoutX="145.0" layoutY="482.0" prefHeight="103.0" prefWidth="281.0" text="Give text here " />
-    <Text fx:id="dashLink" fill="WHITE" layoutX="812.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Dashboard">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="13.0" />
-        </font>
-    </Text>
-    <Text fill="WHITE" layoutX="759.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Bar" wrappingWidth="83.54736328125">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="14.0" />
-        </font>
-    </Text>
-    <Text fill="WHITE" layoutX="759.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Bar" wrappingWidth="83.54736328125">
-        <font>
-            <Font name="SFUIDisplay-Regular" size="14.0" />
-        </font>
-    </Text>
-    <Text fill="WHITE" layoutX="759.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Bar" wrappingWidth="83.54736328125">
-        <font>
-            <Font size="14.0" />
-        </font>
-    </Text>
+    <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="297.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+        <effect>
+            <GaussianBlur />
+        </effect>
+        <Hyperlink prefHeight="27.0" prefWidth="50.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
+           <HBox.margin>
+               <Insets right="40.0" />
+           </HBox.margin>
+           <font>
+               <Font name="SFUIDisplay-Regular" size="15.0" />
+           </font>
+        </Hyperlink>
+        <Hyperlink prefHeight="27.0" prefWidth="105.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="How it works" textFill="WHITESMOKE">
+           <HBox.margin>
+               <Insets left="40.0" right="40.0" />
+           </HBox.margin>
+           <font>
+               <Font name="SFUIDisplay-Regular" size="15.0" />
+           </font>
+        </Hyperlink>
+        <Hyperlink prefHeight="27.0" prefWidth="55.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
+           <HBox.margin>
+               <Insets left="40.0" />
+           </HBox.margin>
+           <font>
+               <Font name="SFUIDisplay-Regular" size="15.0" />
+           </font>
+        </Hyperlink>
+    </HBox>
+   <Hyperlink layoutX="762.0" layoutY="55.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Welcome to dashboard" textFill="WHITESMOKE">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="15.0" />
+      </font>
+   </Hyperlink>
+   <TextField editable="false" layoutX="160.0" layoutY="202.0" promptText="Username">
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+      <font>
+         <Font name="SFUIDisplay-Regular" size="11.0" />
+      </font>
+   </TextField>
 </AnchorPane>
