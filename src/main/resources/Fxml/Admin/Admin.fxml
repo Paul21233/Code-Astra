@@ -1,144 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.effect.GaussianBlur?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1000.0" styleClass="adminBackground" stylesheets="@../../styles/admin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Admin.AdminController">
-   <ImageView fitHeight="572.0" fitWidth="934.0" layoutX="74.0" layoutY="190.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="65.0">
-      <Image url="@../../image/color.png" />
-   </ImageView>
-   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="311.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/admin.css">
-      <effect>
-         <GaussianBlur />
-      </effect>
-      <Label fx:id="homebtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home " textFill="WHITESMOKE">
-         <font>
-            <Font name="SFUIDisplay-Regular" size="15.0" />
-         </font>
-         <HBox.margin>
-            <Insets right="40.0" />
-         </HBox.margin>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Label>
-      <Label fx:id="editbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="How it works" textFill="WHITESMOKE">
-         <font>
-            <Font size="15.0" />
-         </font>
-         <HBox.margin>
-            <Insets left="40.0" right="40.0" />
-         </HBox.margin>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Label>
-      <Label fx:id="aboutbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="FAQ's" textFill="WHITESMOKE">
-         <font>
-            <Font size="15.0" />
-         </font>
-         <HBox.margin>
-            <Insets left="40.0" />
-         </HBox.margin>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Label>
-   </HBox>
-   <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="989.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
-      <cursor>
-         <Cursor fx:constant="HAND" />
-      </cursor>
-   </ImageView>
-   <Label layoutX="909.0" layoutY="68.0" text="Admin" textFill="WHITESMOKE">
-      <font>
-         <Font name="SFUIDisplay-Regular" size="19.0" />
-      </font>
-      <cursor>
-         <Cursor fx:constant="HAND" />
-      </cursor>
-   </Label>
-   <MenuButton layoutX="984.0" layoutY="68.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="33.0">
-      <items>
-         <MenuItem mnemonicParsing="false" text="Action 1" />
-         <MenuItem mnemonicParsing="false" text="Action 2" />
-      </items>
+<AnchorPane prefHeight="530.0" prefWidth="834.0" styleClass="adminBackground" stylesheets="@../../styles/admin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Admin.AdminController">
+   <Label layoutX="70.0" layoutY="32.0" style="-fx-font-family: SF UI Display; -fx-font-size: 25px;" text="Welcome" textFill="WHITESMOKE">
       <font>
          <Font name="SFUIDisplay-Regular" size="12.0" />
       </font>
-   </MenuButton>
-   <ImageView fitHeight="78.0" fitWidth="141.0" layoutX="43.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/FINAL_Logo_PNG.png" />
-      </image>
-   </ImageView>
-   <ImageView fitHeight="203.0" fitWidth="273.0" layoutX="122.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/Rectangle%203.png" />
-      </image>
-   </ImageView>
-   <Text fill="WHITE" layoutX="155.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Community Settings">
+   </Label>
+   <Label fx:id="adminName" layoutX="208.0" layoutY="32.0" style="-fx-font-family: SF UI Display; -fx-font-size: 25px; -fx-font-weight: bold;" text="Admin" textFill="WHITESMOKE">
       <font>
-         <Font name="SFUIDisplay-Regular" size="23.0" />
+         <Font name="SFUIDisplay-Regular" size="12.0" />
       </font>
-   </Text>
-   <Button layoutX="236.0" layoutY="516.0" mnemonicParsing="false" text="GO" />
-   <ImageView fitHeight="78.0" fitWidth="73.0" layoutX="220.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/Users.png" />
-      </image>
-   </ImageView>
-   <ImageView fitHeight="203.0" fitWidth="273.0" layoutX="406.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/Rectangle%203.png" />
-      </image>
-   </ImageView>
-   <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="506.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/Admin%20Settings%20Male.png" />
-      </image>
-   </ImageView>
-   <ImageView fitHeight="203.0" fitWidth="273.0" layoutX="690.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/Rectangle%203.png" />
-      </image>
-   </ImageView>
-   <ImageView fitHeight="73.0" fitWidth="73.0" layoutX="794.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/Chat%20Settings.png" />
-      </image>
-   </ImageView>
-   <Text fill="WHITE" layoutX="468.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile Settings">
-      <font>
-         <Font name="SFUIDisplay-Regular" size="23.0" />
-      </font>
-   </Text>
-   <Button layoutX="526.0" layoutY="515.0" mnemonicParsing="false" text="GO" />
-   <Text fill="WHITE" layoutX="761.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat Settings">
-      <font>
-         <Font name="SFUIDisplay-Regular" size="23.0" />
-      </font>
-   </Text>
-   <Button layoutX="808.0" layoutY="514.0" mnemonicParsing="false" text="GO" />
-   <ImageView fitHeight="78.0" fitWidth="244.0" layoutX="415.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../image/Rectangle%2013.png" />
-      </image>
-   </ImageView>
-   <Text fill="WHITE" layoutX="450.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard">
-      <font>
-         <Font name="SFUIDisplay-Regular" size="23.0" />
-      </font>
-   </Text>
+   </Label>
+   <Button layoutX="703.0" layoutY="29.0" mnemonicParsing="false" onAction="#onLogoutAction" prefHeight="37.0" prefWidth="89.0" style="-fx-alignment: center; -fx-background-color: black; -fx-font-weight: bold; -fx-font-family: SF UI Display; -fx-font-size: 14px; -fx-cursor: hand;" stylesheets="@../../styles/admin.css" text="Log Out" textFill="WHITE" />
+   <TabPane fx:id="tabPane" layoutY="99.0" prefHeight="488.0" prefWidth="834.0" style="-fx-border-color: #1f1e1e; -fx-border-width: 2px;" tabClosingPolicy="UNAVAILABLE">
+      <Tab fx:id="registerMemberTab" style="-fx-background-color: black; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 3px;" text="Register a Member">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="829.0" stylesheets="@../../styles/admin.css">
+            <Label layoutX="279.0" layoutY="133.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Member name:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="279.0" layoutY="226.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Password:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="389.0" layoutY="129.0" prefHeight="26.0" prefWidth="183.0" promptText="Enter new member name" />
+            <Button fx:id="registerbtn" layoutX="259.0" layoutY="354.0" mnemonicParsing="false" onAction="#onRegisterAction" prefHeight="30.0" prefWidth="310.0" style="-fx-font-family: SF UI Display; -fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 15px; -fx-cursor: hand;" stylesheets="@../../styles/admin.css" text="Register">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="emailField" layoutX="389.0" layoutY="174.0" prefHeight="26.0" prefWidth="182.0" promptText="Enter Email" />
+            <Label layoutX="279.0" layoutY="179.0" prefHeight="17.0" prefWidth="87.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Enter Email:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="279.0" layoutY="273.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Date Of Birth:" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="successLabel" layoutX="259.0" layoutY="320.0" prefHeight="18.0" prefWidth="309.0" style="-fx-alignment: center; -fx-font-family: SF UI Display;" textFill="#41b421" />
+            <Label layoutX="325.0" layoutY="75.0" style="-fx-font-family: SF UI Display; -fx-font-size: 14; -fx-font-weight: bold;" stylesheets="@../../styles/admin.css" text="General Information" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dobField" layoutX="388.0" layoutY="269.0" prefHeight="26.0" prefWidth="182.0" promptText="Enter DOB" />
+            <PasswordField fx:id="passwordField" layoutX="389.0" layoutY="221.0" prefHeight="26.0" prefWidth="182.0" promptText="Enter Password">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </PasswordField>
+         </AnchorPane>
+      </Tab>
+      <Tab fx:id="updateinfoTab" style="-fx-background-color: black; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 3px;" text="Update information of a Member">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <Label layoutX="260.0" layoutY="175.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Member Username" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="260.0" layoutY="239.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Date of Birth" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newName" layoutX="385.0" layoutY="170.0" prefHeight="26.0" prefWidth="183.0" promptText="Enter new name" />
+            <Button fx:id="updatebtn" layoutX="259.0" layoutY="304.0" mnemonicParsing="false" onAction="#onUpdateAction" prefHeight="30.0" prefWidth="310.0" style="-fx-font-family: SF UI Display; -fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 15px; -fx-cursor: hand;" stylesheets="@../../styles/admin.css" text="Update Information" />
+            <ChoiceBox fx:id="nameChoiceMenu" layoutX="385.0" layoutY="110.0" prefHeight="26.0" prefWidth="183.0" />
+            <Label layoutX="261.0" layoutY="115.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Select User" textFill="WHITESMOKE">
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="12.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dobNew" layoutX="385.0" layoutY="234.0" promptText="Enter new DOB" />
+         </AnchorPane>
+      </Tab>
+      <Tab fx:id="removeMemTab" style="-fx-background-color: black; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 3px;" text="Remove a Member">
+         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <Button fx:id="removebtn" layoutX="259.0" layoutY="251.0" mnemonicParsing="false" onAction="#onRemoveAction" prefHeight="30.0" prefWidth="310.0" style="-fx-font-family: SF UI Display; -fx-background-color: black; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 15px; -fx-cursor: hand;" stylesheets="@../../styles/admin.css" text="Remove" />
+         </AnchorPane>
+      </Tab>
+   </TabPane>
 </AnchorPane>

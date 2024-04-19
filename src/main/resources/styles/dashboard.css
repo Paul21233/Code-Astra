@@ -1,12 +1,5 @@
-.backgroundimage{
-    -fx-background-image: url("../image/backgroound3.jpg");
-    -fx-background-repeat: no repeat;
-    -fx-background-size: cover;
-    -fx-background-color: linear-gradient(to top, rgb(43, 43, 43) 100%, rgb(43, 43, 43) 100%);
-}
-
 .backgroundColor{
-    -fx-background-image: url("../image/backgroound.jpg");
+    -fx-background-image: url("../image/bg_img.jpg");
     -fx-background-repeat: no repeat;
     -fx-background-size: cover;
     -fx-background-color: linear-gradient(to top, rgb(43, 43, 43) 100%, rgb(43, 43, 43) 100%);
