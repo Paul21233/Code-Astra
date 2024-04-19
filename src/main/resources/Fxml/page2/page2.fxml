@@ -12,106 +12,112 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="687.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="701.0" styleClass="custom-box" stylesheets="@../../styles/page2.css">
-         <children>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Edit" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" right="60.0" />
-               </HBox.margin>
-            </Label>
-            <Label accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="About" textFill="WHITESMOKE">
-               <font>
-                  <Font size="27.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" />
-               </HBox.margin>
-            </Label>
-         </children>
-         <effect>
-            <GaussianBlur />
-         </effect>
-      </HBox>
-      <Button layoutX="130.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
-         <font>
-            <Font size="25.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button layoutX="300.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C++" textFill="WHITESMOKE">
-         <font>
-            <Font size="25.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button layoutX="470.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="HTML" textFill="WHITESMOKE">
-         <font>
-            <Font size="25.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button layoutX="640.0" layoutY="646.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Python" textFill="WHITESMOKE">
-         <font>
-            <Font size="25.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button layoutX="130.0" layoutY="740.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Java" textFill="WHITESMOKE">
-         <font>
-            <Font size="25.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button layoutX="300.0" layoutY="740.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="CSS" textFill="WHITESMOKE">
-         <font>
-            <Font size="25.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Label layoutX="130.0" layoutY="380.0" prefHeight="196.0" prefWidth="637.0" text="What language do you want to learn?" textFill="WHITESMOKE" wrapText="true">
-         <font>
-            <Font size="63.0" />
-         </font>
-      </Label>
-      <ImageView cache="true" cacheHint="SPEED" fitHeight="230.0" fitWidth="340.0" layoutX="1504.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
-      <TextArea blendMode="DARKEN" depthTest="DISABLE" editable="false" layoutX="1500.0" layoutY="540.0" prefHeight="300.0" prefWidth="340.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" wrapText="true" />
-      <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/FINAL_Logo_PNG.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="1628.0" layoutY="840.0" maxHeight="115.0" maxWidth="115.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="115.0" styleClass="custom-circle-button" stylesheets="@../../styles/page2.css" text="Button" textFill="WHITESMOKE">
-         <font>
-            <Font size="24.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="1686.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <Button fx:id="cbtn" layoutX="134.0" layoutY="626.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="htmlbtn" layoutX="302.0" layoutY="532.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="HTML" textFill="WHITESMOKE">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="pythonbtn" layoutX="472.0" layoutY="532.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Python" textFill="WHITESMOKE">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="cppbtn" layoutX="642.0" layoutY="532.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C++" textFill="WHITESMOKE">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="javabtn" layoutX="135.0" layoutY="532.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Java" textFill="WHITESMOKE">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="cssbtn" layoutX="302.0" layoutY="626.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="CSS" textFill="WHITESMOKE">
+      <font>
+         <Font size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Label layoutX="133.0" layoutY="310.0" prefHeight="196.0" prefWidth="637.0" text="What language do you want to learn?" textFill="WHITESMOKE" wrapText="true">
+      <font>
+         <Font size="63.0" />
+      </font>
+   </Label>
+   <ImageView cache="true" cacheHint="SPEED" fitHeight="230.0" fitWidth="340.0" layoutX="1504.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
+   <TextArea blendMode="DARKEN" depthTest="DISABLE" editable="false" layoutX="1303.0" layoutY="262.0" prefHeight="236.0" prefWidth="245.0" stylesheets="@../../styles/page2.css" wrapText="true" />
+   <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/FINAL_Logo_PNG.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="205.0" fitWidth="240.0" layoutX="1590.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" />
+   <TextArea layoutX="1252.0" layoutY="539.0" prefHeight="202.0" prefWidth="347.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" />
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="595.0" layoutY="77.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="690.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+      <effect>
+         <GaussianBlur />
+      </effect>
+      <children>
+         <Label fx:id="home" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="106.0" text="Home" textFill="WHITESMOKE">
+            <font>
+               <Font name="SFUIDisplay-Regular" size="30.0" />
+            </font>
+            <HBox.margin>
+               <Insets right="60.0" />
+            </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+         <Label fx:id="edit" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="173.0" text="How it works" textFill="WHITESMOKE">
+            <font>
+               <Font name="SFUIDisplay-Regular" size="30.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="60.0" right="60.0" />
+            </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+         <Label fx:id="about" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="98.0" text="FAQ's" textFill="WHITESMOKE">
+            <font>
+               <Font name="SFUIDisplay-Regular" size="30.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="60.0" />
+            </HBox.margin>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Label>
+      </children>
+   </HBox>
+   <Button layoutX="1357.0" layoutY="794.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="140.0" stylesheets="@../../styles/page2.css" text="Let's Go">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
 </AnchorPane>
