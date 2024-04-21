@@ -43,7 +43,7 @@
                <Font size="16.0" />
             </font>
          </Text>
-         <Button fx:id="registerbtn" layoutX="171.0" layoutY="493.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: 2d2d2d;" text="Register Here! ">
+         <Button fx:id="registerbtn" layoutX="171.0" layoutY="493.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: 2d2d2d;" text="Register Here! ">
             <font>
                <Font size="11.0" />
             </font>

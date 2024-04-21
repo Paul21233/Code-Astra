@@ -2,11 +2,15 @@ package com.example.FinalProject.Controllers.Register;
 
 import com.example.FinalProject.DatabaseManager;
 import javafx.concurrent.Task;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -52,6 +56,12 @@ public class registerController {
     public Hyperlink loginbtn;
 
     @FXML
+    public ChoiceBox levelSelect;
+
+    @FXML
+    public Button backbtn;
+
+    @FXML
     private void handleCreateAccount(ActionEvent event) {
         if (!signUp.isDisabled()) {
             String username = this.username.getText().trim();
@@ -91,6 +101,24 @@ public class registerController {
             } else {
                 System.out.println("Failed to connect to the database!");
             }
+        }
+    }
+
+    @FXML
+    public void handleBackbtn(ActionEvent event) {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/windowOne.fxml"));
+        try {
+            Parent root = loader.load();
+            // Create a new scene with the previous page
+            Scene scene = new Scene(root);
+            // Get the stage (window) from the button's scene
+            Stage stage = (Stage) backbtn.getScene().getWindow();
+            // Set the new scene on the stage
+            stage.setScene(scene);
+            // Show the stage
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

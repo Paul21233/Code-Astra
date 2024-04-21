@@ -46,6 +46,7 @@
     /*-fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";*/
 }
 
+/* sign up */
 .custom-button{
     -fx-background-color: #ffffff;
     /*-fx-border-color: whitesmoke;*/
@@ -53,6 +54,16 @@
     -fx-font-size: 20px;
     /*-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);*/
     -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
+}
+
+/* go back */
+.custom-back-button{
+    -fx-background-color: #2b2b2b;
+    -fx-border-color: whitesmoke;
+    -fx-text-fill: #000000;
+    -fx-font-size: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);
+    -fx-shape: "M 50,0 A 50,50 0 1,0 0,50 50,50 0 0,0 50,0 Z";
 }
 
 .custom_dob{

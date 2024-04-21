@@ -23,8 +23,10 @@ module com.example.FinalProject {
     exports com.example.FinalProject.Controllers.User;
     exports com.example.FinalProject.Controllers.Login;
     exports com.example.FinalProject.Controllers.Register;
+    exports com.example.FinalProject.Controllers.otherController;
     exports com.example.FinalProject.Models;
     exports com.example.FinalProject.Views;
 
     opens com.example.FinalProject.Controllers.Register to javafx.fxml;
+    exports com.example.FinalProject.Controllers.Community;
 }

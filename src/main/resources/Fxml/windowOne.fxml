@@ -36,7 +36,7 @@
     <ImageView fitHeight="150.0" fitWidth="221.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../image/FINAL_Logo_PNG.png" />
     </ImageView>
-    <Button fx:id="beginbtn" layoutX="584.0" layoutY="594.0" mnemonicParsing="false" prefHeight="67.26" prefWidth="560.0" styleClass="custom-link" stylesheets="@../styles/styles.css" text="Beginner Level" textFill="WHITESMOKE">
+    <Button fx:id="beginbtn" layoutX="584.0" layoutY="594.0" mnemonicParsing="false" onAction="#handleBeginButtonClick" prefHeight="67.26" prefWidth="560.0" styleClass="custom-link" stylesheets="@../styles/styles.css" text="Beginner Level" textFill="WHITESMOKE">
         <font>
           <Font size="30.0" />
         </font>
@@ -44,7 +44,7 @@
           <Cursor fx:constant="HAND" />
         </cursor>
     </Button>
-    <Button fx:id="interbtn" layoutX="584.0" layoutY="682.0" mnemonicParsing="false" prefHeight="67.26" prefWidth="560.0" styleClass="custom-link" stylesheets="@../styles/styles.css" text="Intermediate Level" textFill="WHITESMOKE">
+    <Button fx:id="interbtn" layoutX="584.0" layoutY="682.0" mnemonicParsing="false" onAction="#handleBeginButtonClick" prefHeight="67.26" prefWidth="560.0" styleClass="custom-link" stylesheets="@../styles/styles.css" text="Intermediate Level" textFill="WHITESMOKE">
         <opaqueInsets>
           <Insets />
         </opaqueInsets>
@@ -84,7 +84,7 @@
            </font>
         </Hyperlink>
     </HBox>
-   <Hyperlink fx:id="loginbtn" layoutX="1523.0" layoutY="76.0" prefHeight="51.0" prefWidth="91.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../styles/register.css" text="Login" textFill="WHITESMOKE">
+   <Hyperlink fx:id="loginbtn" layoutX="1523.0" layoutY="76.0" onAction="#handleLoginButtonClick" prefHeight="51.0" prefWidth="91.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../styles/register.css" text="Login" textFill="WHITESMOKE">
       <font>
          <Font name="SFUIDisplay-Regular" size="30.0" />
       </font>
