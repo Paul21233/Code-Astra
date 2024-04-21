@@ -39,10 +39,17 @@ public class registerController {
     @FXML
     public CheckBox agree_tc;
 
-
+    @FXML
     public Label home;
+
+    @FXML
     public Label edit;
+
+    @FXML
     public Label about;
+
+    @FXML
+    public Hyperlink loginbtn;
 
     @FXML
     private void handleCreateAccount(ActionEvent event) {
