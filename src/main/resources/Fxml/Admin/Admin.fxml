@@ -15,8 +15,7 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="800.0" prefWidth="1000.0" styleClass="adminBackground" stylesheets="@../../styles/admin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Admin.AdminController">
-   <ImageView fitHeight="572.0" fitWidth="934.0" layoutX="74.0" layoutY="190.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="65.0">
-      <Image url="@../../image/color.png" />
+   <ImageView fitHeight="572.0" fitWidth="934.0" layoutX="74.0" layoutY="190.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="65.0">      <Image url="@../../image/color.png" />
    </ImageView>
    <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="311.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/admin.css">
       <effect>
