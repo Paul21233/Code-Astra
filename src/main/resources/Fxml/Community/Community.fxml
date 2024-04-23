@@ -6,7 +6,6 @@
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -15,221 +14,160 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.CommunityController">
-   <children>
-      <ImageView fitHeight="800.0" fitWidth="1000.0" opacity="0.95" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/backgroound.jpg" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="78.0" fitWidth="141.0" layoutX="33.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/FINAL_Logo_PNG.png" />
-         </image>
-      </ImageView>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="287.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/admin.css">
-         <effect>
-            <GaussianBlur />
-         </effect>
-         <children>
-            <Label fx:id="homebtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home " textFill="WHITESMOKE">
-               <font>
-                  <Font name="SFUIDisplay-Regular" size="15.0" />
-               </font>
-               <HBox.margin>
-                  <Insets right="40.0" />
-               </HBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Label>
-            <Label fx:id="editbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="How it works" textFill="WHITESMOKE">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="40.0" right="40.0" />
-               </HBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Label>
-            <Label fx:id="aboutbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="FAQ's" textFill="WHITESMOKE">
-               <font>
-                  <Font size="15.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="40.0" />
-               </HBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Label>
-         </children>
-      </HBox>
-      <Label layoutX="866.0" layoutY="61.0" text="User" textFill="WHITESMOKE">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.CommunityController">
+   <ImageView fitHeight="800.0" fitWidth="1000.0" opacity="0.95" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/backgroound.jpg" />
+   </ImageView>
+   <ImageView fitHeight="78.0" fitWidth="141.0" layoutX="33.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/FINAL_Logo_PNG.png" />
+   </ImageView>
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="287.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/admin.css">
+      <effect>
+         <GaussianBlur />
+      </effect>
+      <Label fx:id="homebtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="Home " textFill="WHITESMOKE">
          <font>
-            <Font name="SFUIDisplay-Regular" size="16.0" />
+            <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
+         <HBox.margin>
+            <Insets right="40.0" />
+         </HBox.margin>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Label>
-      <ImageView fitHeight="559.0" fitWidth="652.0" layoutX="23.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%2016.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="34.0" fitWidth="606.0" layoutX="40.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%207.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="54.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Search.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="142.0" fitWidth="472.0" layoutX="170.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%2018.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="78.0" fitWidth="463.0" layoutX="195.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%2020.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="78.0" fitWidth="463.0" layoutX="195.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%2020.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="195.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Scroll%20Down.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="276.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Scroll%20Up.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="195.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Scroll%20Down.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="276.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Scroll%20Up.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="155.0" fitWidth="66.0" layoutX="33.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%202.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="51.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Home%20Page.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="51.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Settings.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="174.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/User.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="159.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/User.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="159.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/User.png" />
-         </image>
-      </ImageView>
-      <Hyperlink layoutX="148.0" layoutY="591.0" text="Sowrin" />
-      <Hyperlink layoutX="149.0" layoutY="466.0" text="Maazz" />
-      <Hyperlink layoutX="206.0" layoutY="216.0" text="Ahmad Hasan" />
-      <TextArea layoutX="178.0" layoutY="252.0" prefHeight="108.0" prefWidth="456.0" />
-      <Button layoutX="217.0" layoutY="501.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Upvoat">
+      <Label fx:id="editbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="How it works" textFill="WHITESMOKE">
          <font>
-            <Font size="9.0" />
+            <Font size="15.0" />
          </font>
-      </Button>
-      <Button layoutX="298.0" layoutY="501.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Downvoat">
+         <HBox.margin>
+            <Insets left="40.0" right="40.0" />
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="aboutbtn" accessibleRole="HYPERLINK" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="89.0" text="FAQ's" textFill="WHITESMOKE">
          <font>
-            <Font size="9.0" />
+            <Font size="15.0" />
          </font>
-      </Button>
-      <Button layoutX="217.0" layoutY="626.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Upvoat">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Button>
-      <Button layoutX="298.0" layoutY="626.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Downvoat">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Button>
-      <TextArea layoutX="201.0" layoutY="421.0" prefHeight="69.0" prefWidth="434.0" />
-      <TextArea layoutX="201.0" layoutY="546.0" prefHeight="69.0" prefWidth="434.0" />
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="180.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Chat%20Bubble.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="202.0" layoutY="374.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Comment">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Button>
-      <ImageView fitHeight="400.0" fitWidth="309.0" layoutX="670.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%2017.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="444.0" fitWidth="289.0" layoutX="680.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Rectangle%2022.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="680.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Chat%20Bubbleee.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="707.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat">
-         <font>
-            <Font name="SFUIDisplay-Regular" size="21.0" />
-         </font>
-      </Text>
-      <Hyperlink layoutX="688.0" layoutY="548.0" text="Ahmad Hasan">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Hyperlink>
-      <Hyperlink layoutX="689.0" layoutY="480.0" text="Sowrin Paul">
-         <font>
-            <Font size="9.0" />
-         </font>
-      </Hyperlink>
-      <TextField layoutX="684.0" layoutY="635.0" prefHeight="38.0" prefWidth="282.0" />
-      <TextArea layoutX="691.0" layoutY="504.0" prefHeight="0.0" prefWidth="267.0" />
-      <TextArea layoutX="691.0" layoutY="572.0" prefHeight="0.0" prefWidth="267.0" />
-      <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="905.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../image/Male%20User.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="915.0" layoutY="642.0" mnemonicParsing="false" text="Send" />
-   </children>
+         <HBox.margin>
+            <Insets left="40.0" />
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </HBox>
+   <Label layoutX="866.0" layoutY="61.0" text="User" textFill="WHITESMOKE">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="16.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Label>
+   <ImageView fitHeight="559.0" fitWidth="652.0" layoutX="23.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Rectangle 16.png" />
+   </ImageView>
+   <ImageView fitHeight="34.0" fitWidth="606.0" layoutX="40.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Rectangle 7.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="54.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Search.png" />
+   </ImageView>
+   <ImageView fitHeight="142.0" fitWidth="472.0" layoutX="170.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Rectangle 18.png" />
+   </ImageView>
+   <ImageView fitHeight="78.0" fitWidth="463.0" layoutX="195.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Rectangle 20.png" />
+   </ImageView>
+   <ImageView fitHeight="78.0" fitWidth="463.0" layoutX="195.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Rectangle 20.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="195.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Scroll Down.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="276.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Scroll Up.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="195.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Scroll Down.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="276.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Scroll Up.png" />
+   </ImageView>
+   <ImageView fitHeight="155.0" fitWidth="66.0" layoutX="33.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Rectangle 2.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="51.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Home Page.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="51.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Settings.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="174.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/User.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="159.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/User.png" />
+   </ImageView>
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="159.0" layoutY="569.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/User.png" />
+   </ImageView>
+   <Hyperlink layoutX="148.0" layoutY="591.0" text="Sowrin" />
+   <Hyperlink layoutX="149.0" layoutY="466.0" text="Maazz" />
+   <Hyperlink layoutX="206.0" layoutY="216.0" text="Ahmad Hasan" />
+   <TextArea layoutX="178.0" layoutY="252.0" prefHeight="108.0" prefWidth="456.0" />
+   <Button layoutX="217.0" layoutY="501.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Upvote">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button layoutX="298.0" layoutY="501.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Downvote">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button layoutX="217.0" layoutY="626.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Upvote">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <Button layoutX="298.0" layoutY="626.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Downvote">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <TextArea layoutX="201.0" layoutY="421.0" prefHeight="69.0" prefWidth="434.0" />
+   <TextArea layoutX="201.0" layoutY="546.0" prefHeight="69.0" prefWidth="434.0" />
+   <ImageView fitHeight="24.0" fitWidth="22.0" layoutX="180.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Chat Bubble.png" />
+   </ImageView>
+   <Button layoutX="202.0" layoutY="374.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="54.0" text="Comment">
+      <font>
+         <Font size="9.0" />
+      </font>
+   </Button>
+   <ImageView fitHeight="69.0" fitWidth="73.0" layoutX="812.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Chat Bubbleee.png" />
+   </ImageView>
+   <Text fill="WHITE" layoutX="720.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Want to chat with some specific people?" textAlignment="CENTER" wrappingWidth="265.7890625">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="21.0" />
+      </font>
+   </Text>
+   <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="905.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Male User.png" />
+   </ImageView>
+   <Button layoutX="810.0" layoutY="320.0" mnemonicParsing="false" stylesheets="@../../styles/community.css" text="Let's Gooo" />
+   <Text fill="WHITE" layoutX="714.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need some help with us? Meet our bot" textAlignment="CENTER" wrappingWidth="265.7890625">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="21.0" />
+      </font>
+   </Text>
+   <Button fx:id="botClick" layoutX="827.0" layoutY="546.0" mnemonicParsing="false" onAction="#botButtonClick" text="BOT">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
 </AnchorPane>

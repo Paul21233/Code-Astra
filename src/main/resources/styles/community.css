@@ -1,0 +1,259 @@
+@import "theme.css";
+
+.box {
+    -fx-background-color: -dark;
+    -fx-border-width: 2px;
+    -fx-border-color: -semidark;
+    -fx-border-radius: 2px;
+}
+
+.separator *.line{
+    -fx-border-style: solid;
+    -fx-border-color: -semidark;
+    -fx-border-width: 1px;
+}
+
+.text-area{
+    -fx-background-color: -dark;
+    -fx-text-fill: -light;
+}
+
+#cPostLink:hover {
+    -fx-background-color: -darker;
+}
+
+
+#cPostReturn{
+    -fx-fill: -light;
+}
+#cPostReturn:hover{
+    -fx-fill: -sign;
+}
+
+.text-area .content{
+    -fx-background-color: -dark;
+    -fx-border-width: 1;
+    -fx-border-color: -semidark;
+}
+
+.menu-item .label {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-cursor: HAND;
+}
+
+.menu-item:focused {
+    -fx-background-color: -dark;
+    -fx-cursor: HAND;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: -sign;
+}
+
+.context-menu {
+
+    -fx-background-color: -dark;
+    /*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    -fx-padding: .7em .7em .7em .7em; /* 4 1 8 1 */
+    -fx-min-width: 160px;
+    -fx-border-color: -semidark;
+    -fx-border-width: 1px;
+}
+
+/*NavPane********************************************************/
+
+
+#navPane {
+    -fx-background-color: -dark;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-color: -sign;
+    -fx-border-width: 4px;
+    -fx-border-radius: 0px;
+}
+
+#searchEngine {
+    -fx-background-color: -dark;
+    -fx-text-fill: -light;
+    -fx-border-width: 1px;
+    -fx-border-color: -semidark;
+    -fx-border-radius: 2px;
+}
+
+.iconbtn {
+    -fx-fill: -sign;
+    -fx-cursor: HAND;
+}
+
+#navTitle1 {
+    -fx-fill: -light;
+}
+
+#navTitle2 {
+    -fx-fill: -sign;
+}
+
+#userDropdown {
+    -fx-background-color: -dark;
+    -fx-cursor: HAND;
+    -fx-border-color: -semidark;
+    -fx-border-radius: 2px;
+}
+
+/*ContentPane********************************************************/
+
+#cListSpotTitle {
+    -fx-text-fill: -light;
+}
+#cListPostTitle{
+    -fx-text-fill: -light;
+}
+
+.cMainPostTextColor{
+    -fx-text-fill: -light;
+}
+
+#cReplyBox{
+    -fx-background-color: -dark;
+    -fx-border-width: 2px;
+    -fx-border-color: -semidark;
+    -fx-border-radius: 2px;
+}
+
+#cMainScrollPane{
+    -fx-background-color: -dark;
+}
+
+#cMainPostAddCommentBtn{
+    -fx-text-fill: -sign;
+    -fx-cursor: HAND;
+}
+#cMainPostAddCommentBtn:hover{
+    -fx-text-fill: -darker;
+    -fx-background-color: -sign;
+}
+
+
+.cardColor {
+    -fx-fill: -light;
+    -fx-text-fill: -light;
+}
+
+/*Spot Card for Lists*/
+
+.bgcolor{
+    -fx-background-color: -dark;
+}
+
+#spotCardBox{
+    -fx-background-color: -dark;
+    -fx-border-width: 2px;
+    -fx-border-color: -semidark;
+    -fx-border-radius: 4px;
+}
+#spotCardLink:hover{
+    -fx-text-fill: -sign;
+    -fx-background-color: -darker;
+}
+.spotCardJoinButton {
+    -fx-background-color: -dark;
+}
+.spotCardJoinButton:hover{
+    -fx-text-fill: -sign;
+    -fx-background-color: -darker;
+}
+
+/*Comment*/
+.commentButton{
+    -fx-text-fill: -sign;
+    -fx-background-color: -dark;
+}
+
+.commentButton:hover{
+    -fx-text-fill: -darker;
+    -fx-background-color: -sign;
+}
+
+/*Spot Pane**********************************************************************************/
+
+#spotRules {
+    -fx-background-color: -dark;
+}
+
+.spotInfoButton {
+    -fx-cursor: HAND;
+    -fx-text-fill: -light;
+    -fx-background-color: -darker;
+    -fx-border-width: 2px;
+    -fx-border-color: -semidark;
+    -fx-border-radius: 2px;
+}
+
+.spotInfoButton:hover{
+    -fx-border-color: -sign;
+    -fx-text-fill: -sign;
+}
+
+.spotLabel{
+    -fx-text-fill: -light;
+}
+
+.tile {
+    -fx-text-fill: -light;
+    -fx-background-color: -darker;
+    -fx-border-width: 2px;
+    -fx-border-color: -semidark;
+    -fx-border-radius: 2px;
+}
+
+/*My Spots Label*/
+#mySpotsText{
+    -fx-fill: -light;
+}
+#mySpotsText:hover{
+    -fx-fill: -sign;
+    -fx-background-color: -light;
+}
+
+
+/*Content Pane | Pagination*/
+
+.pagination {
+    -fx-page-information-visible: false;
+}
+
+/* Remove spacing */
+.pagination > .pagination-control > .control-box {
+    -fx-spacing: 3px;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+/* You can control the actual button sizes here */
+.pagination > .pagination-control > .control-box > .number-button,
+.pagination > .pagination-control > .control-box > .bullet-button,
+.pagination > .pagination-control > .control-box > .left-arrow-button,
+.pagination > .pagination-control > .control-box > .right-arrow-button {
+    -fx-background-insets: 0, 1;
+    -fx-background-color: -light,-light;
+    -fx-min-width: 25;
+    -fx-min-height: 25;
+}
+
+/* Colors on hover */
+.pagination > .pagination-control > .control-box > .number-button:hover,
+.pagination > .pagination-control > .control-box > .bullet-button:hover,
+.pagination > .pagination-control > .control-box > .left-arrow-button:hover,
+.pagination > .pagination-control > .control-box > .right-arrow-button:hover {
+
+    -fx-background-insets: 0;
+    -fx-background-color: -sign;
+}
+
+/* Selected toggle color */
+.pagination > .pagination-control > .control-box > .number-button:selected,
+.pagination > .pagination-control > .control-box > .bullet-button:selected{
+    -fx-background-insets: 0;
+    -fx-background-color: -sign;
+    -fx-text-fill: -light;
+}

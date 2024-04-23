@@ -1,24 +1,18 @@
 package com.example.FinalProject.Controllers.Register;
 
-import com.example.FinalProject.DatabaseManager;
-import javafx.concurrent.Task;
+import com.example.FinalProject.Database.DatabaseManager;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Objects;
 
 public class registerController {
 

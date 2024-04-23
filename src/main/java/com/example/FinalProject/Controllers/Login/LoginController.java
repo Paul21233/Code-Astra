@@ -2,7 +2,7 @@ package com.example.FinalProject.Controllers.Login;
 
 import com.example.FinalProject.App;
 import com.example.FinalProject.Controllers.Register.registerController;
-import com.example.FinalProject.DatabaseManager;
+import com.example.FinalProject.Database.DatabaseManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

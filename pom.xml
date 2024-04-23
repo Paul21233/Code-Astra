@@ -141,11 +141,37 @@
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
+
       <dependency>
           <groupId>org.eclipse.jetty</groupId>
           <artifactId>jetty-webapp</artifactId>
           <version>9.4.46.v20220331</version>
       </dependency>
+
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.7.32</version>
+      </dependency>
+
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <version>1.2.6</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.json</groupId>
+          <artifactId>json</artifactId>
+          <version>20210307</version>
+      </dependency>
+
+      <dependency>
+          <groupId>io.github.palexdev</groupId>
+          <artifactId>materialfx</artifactId>
+          <version>11.8.0</version>
+      </dependency>
+
       <dependency>
           <groupId>org.glassfish.jaxb</groupId>
           <artifactId>jaxb-runtime</artifactId>

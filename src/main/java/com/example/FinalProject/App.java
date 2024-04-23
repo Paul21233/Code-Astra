@@ -14,8 +14,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         try{
-//            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/Register/register.fxml"));
-            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/windowOne.fxml"));
+            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/Community/loading_page.fxml"));
+//            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/windowOne.fxml"));
             Scene scene = new Scene(root.load());
             stage.setScene(scene);
             stage.show();

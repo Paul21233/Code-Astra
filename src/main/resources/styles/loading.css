@@ -1,0 +1,14 @@
+@import "theme.css";
+
+.pane{
+    /*-fx-background-color: -dark;*/
+    -fx-background-image: url("../image/backgroound.jpg");
+}
+
+#title1 {
+    -fx-fill: -light;
+}
+
+#title2 {
+    -fx-fill: -sign;
+}
