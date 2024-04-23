@@ -14,25 +14,28 @@ import java.io.IOException;
 
 public class LoadingController {
     @FXML
+    public Text txt_Title1;
+
+    @FXML
     private Text txt_Title;
 
     @FXML
     void initialize() {
         Stage loginStage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("fxml/userLoginView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/Fxml/Community/mainView.fxml"));
         Scene scene = null;
         try {
             scene = new Scene(fxmlLoader.load());
         } catch (IOException e) {
             e.printStackTrace();
         }
-        loginStage.getIcons().add(new Image(String.valueOf(App.class.getResource("objects\\logo_ph.png"))));
+        loginStage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
         loginStage.setScene(scene);
-        loginStage.setTitle("NightSpot");
+        loginStage.setTitle("Code Astra");
         loginStage.setResizable(false);
         loginStage.resizableProperty().setValue(Boolean.FALSE);
-
-        FadeTransition transition = new FadeTransition(Duration.seconds(2),txt_Title);
+        // Delay for 2 seconds before redirecting to the community page
+        FadeTransition transition = new FadeTransition(Duration.seconds(2), txt_Title);
         transition.setFromValue(1.0);
         transition.setToValue(1.0);
         transition.play();
@@ -42,5 +45,30 @@ public class LoadingController {
             splashStage.close();
             loginStage.show();
         });
+
+
+
+//        transition.setOnFinished(event -> {
+//            // Load the community page
+//            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/Community/mainView.fxml"));
+//            Scene sc = null;
+//            try {
+//                sc = new Scene(loader.load());
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//
+//            // Create and configure the stage for the community page
+//            Stage communityStage = new Stage();
+//            communityStage.setScene(scene);
+//            communityStage.setTitle("Community");
+//            communityStage.setResizable(false);
+//            communityStage.getIcons().add(new Image(String.valueOf(App.class.getResource("objects\\Code_Astra Logo OG.png"))));
+//
+//            // Close the loading stage and show the community stage
+//            Stage loadingStage = (Stage) txt_Title.getScene().getWindow();
+//            loadingStage.close();
+//            communityStage.show();
+//        });
     }
 }

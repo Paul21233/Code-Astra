@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<fx:root alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="245.0" spacing="5.0" style="-fx-background-color: -dark;" stylesheets="@../../../css/main.css" type="HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.MySpotsLabel">
+<fx:root alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="245.0" spacing="5.0" style="-fx-background-color: -dark;" stylesheets="@../../../../styles/community.css" type="HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.MySpotsLabel">
    <children>
       <FontIcon iconColor="WHITE" iconLiteral="mdi2s-subdirectory-arrow-right" iconSize="25" wrappingWidth="25.0" />
       <Text id="mySpotsText" fx:id="mySpotText" strokeType="OUTSIDE" strokeWidth="0.0" text="Sample Spot" wrappingWidth="210.13671875">

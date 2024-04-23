@@ -43,4 +43,5 @@ module com.example.FinalProject {
     exports com.example.FinalProject.Controllers.chat;
     exports com.example.FinalProject.Database;
     opens com.example.FinalProject.Database to javafx.fxml;
+    opens com.example.FinalProject.Controllers.Community to javafx.fxml;
 }

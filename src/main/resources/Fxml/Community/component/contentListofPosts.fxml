@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="945.0" style="-fx-background-color: -dark;" stylesheets="@../../css/main.css" type="VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.Content_ListofPosts">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="945.0" style="-fx-background-color: -dark;" stylesheets="@../../../styles/community.css" type="VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.Content_ListofPosts">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="945.0">
          <children>

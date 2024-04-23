@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<fx:root id="spotCardBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="900.0" style="-fx-background-color: -dark;" stylesheets="@../../../css/main.css" type="HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.CardPost">
+<fx:root id="spotCardBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="900.0" style="-fx-background-color: -dark;" stylesheets="../../../../styles/community.css" type="HBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.CardPost">
    <children>
       <VBox alignment="CENTER" prefHeight="76.0" prefWidth="76.0" spacing="3.0">
          <children>

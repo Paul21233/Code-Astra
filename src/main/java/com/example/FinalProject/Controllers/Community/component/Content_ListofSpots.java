@@ -25,9 +25,9 @@ public class Content_ListofSpots extends VBox {
     public Label searchText;
 
     public Content_ListofSpots() throws IOException {
-        FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/Community/component/contentListofSpots.fxml"));
-        loader.setController(this);
-        loader.setRoot(this);
-        loader.load();
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/Community/component/contentListofSpots.fxml"));
+            loader.setController(this);
+            loader.setRoot(this);
+            loader.load();
     }
 }

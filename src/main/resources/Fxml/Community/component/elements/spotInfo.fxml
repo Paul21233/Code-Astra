@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<fx:root alignment="TOP_CENTER" prefHeight="600.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: -dark;" stylesheets="@../../../css/main.css" type="VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.Spot_Info">
+<fx:root alignment="TOP_CENTER" prefHeight="600.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: -dark;" stylesheets="@../../../../styles/community.css" type="VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.Spot_Info">
    <children>
       <Button fx:id="spotCPostBtn" focusTraversable="false" mnemonicParsing="false" prefHeight="29.0" prefWidth="260.0" styleClass="spotInfoButton" text="CREATE A POST">
          <font>

@@ -623,4 +623,3 @@ public class ComQuery {
     }
 
 }
-

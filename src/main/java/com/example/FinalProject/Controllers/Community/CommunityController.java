@@ -33,7 +33,7 @@ import java.util.Map;
 
 public class CommunityController {
 
-    Image logo = new Image(String.valueOf(App.class.getResource("objects\\")));
+    Image logo = new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png")));
 
     @FXML
     private StackedFontIcon btnAdd;
@@ -372,7 +372,7 @@ public class CommunityController {
 
         Dialog<String> dialog = new Dialog<>();
         dialog.setDialogPane(addSpotDialog);
-        dialog.setTitle("NightSpot");
+        dialog.setTitle("Code Astra");
 
         Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
         stage.getIcons().add(logo);
@@ -416,7 +416,7 @@ public class CommunityController {
         }
     }
 
-    @FXML
+//    @FXML
 //    void signout(ActionEvent event) {
 //        Stage mainStage = (Stage) this.btnAdd.getScene().getWindow();
 //
@@ -431,7 +431,7 @@ public class CommunityController {
 //
 //        loginStage.getIcons().add(new Image(String.valueOf(App.class.getResource("objects\\logo_ph.png"))));
 //        loginStage.setScene(scene);
-//        loginStage.setTitle("NightSpot");
+//        loginStage.setTitle("Code Astra");
 //        loginStage.setResizable(false);
 //        loginStage.resizableProperty().setValue(Boolean.FALSE);
 //
@@ -448,7 +448,7 @@ public class CommunityController {
 
         Dialog<String> dialog = new Dialog<>();
         dialog.setDialogPane(addPostDialog);
-        dialog.setTitle("NightSpot");
+        dialog.setTitle("Code Astra");
 
         Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
         stage.getIcons().add(logo);
@@ -573,7 +573,7 @@ public class CommunityController {
 
         Dialog<String> dialog = new Dialog<>();
         dialog.setDialogPane(addReplyDialog);
-        dialog.setTitle("NightSpot");
+        dialog.setTitle("Code Astra");
 
         Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
         stage.getIcons().add(logo);
@@ -614,7 +614,7 @@ public class CommunityController {
 
         Dialog<String> dialog = new Dialog<>();
         dialog.setDialogPane(addCommentDialog);
-        dialog.setTitle("NightSpot");
+        dialog.setTitle("Code Astra");
 
         Stage stage = (Stage) dialog.getDialogPane().getScene().getWindow();
         stage.getIcons().add(logo);
@@ -820,9 +820,6 @@ public class CommunityController {
                 return empty;
             });
         }
-
-
-
     }
 
     void getSearchSpots(String text) throws IOException, SQLException {

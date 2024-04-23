@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<fx:root alignment="CENTER" prefWidth="900.0" spacing="5.0" stylesheets="@../../../css/main.css" type="VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.CardComment">
+<fx:root alignment="CENTER" prefWidth="900.0" spacing="5.0" stylesheets="@../../../../styles/community.css" type="VBox" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.component.element.CardComment">
    <children>
       <HBox id="cReplyBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="900.0" style="-fx-background-color: -dark;">
          <children>
