@@ -19,74 +19,18 @@
         <String fx:value="backgroundColor" />
         <String fx:value="background-image" />
     </styleClass>
+
     <HBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" />
-    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="555.0" layoutY="486.0" prefHeight="76.0" prefWidth="626.0" stylesheets="@../styles/styles.css" text="Start Your Coding Journey!" textAlignment="CENTER" textFill="WHITESMOKE">
-        <font>
-            <Font name="System Bold" size="47.0" />
-        </font>
-    </Label>
     <TextField fx:id="searchbar" layoutX="612.0" layoutY="278.0" opacity="0.7" prefHeight="50.0" prefWidth="481.0" promptText="Search..." styleClass="search-box" stylesheets="@../styles/styles.css" AnchorPane.leftAnchor="612.0" AnchorPane.topAnchor="278.0">
         <font>
-       <Font size="22.0" />
+            <Font size="22.0" />
         </font>
         <cursor>
-       <Cursor fx:constant="TEXT" />
+            <Cursor fx:constant="TEXT" />
         </cursor>
     </TextField>
     <ImageView fitHeight="150.0" fitWidth="221.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
         <Image url="@../image/FINAL_Logo_PNG.png" />
     </ImageView>
-    <Button fx:id="beginbtn" layoutX="584.0" layoutY="594.0" mnemonicParsing="false" onAction="#handleBeginButtonClick" prefHeight="67.26" prefWidth="560.0" styleClass="custom-link" stylesheets="@../styles/styles.css" text="Beginner Level" textFill="WHITESMOKE">
-        <font>
-          <Font size="30.0" />
-        </font>
-        <cursor>
-          <Cursor fx:constant="HAND" />
-        </cursor>
-    </Button>
-    <Button fx:id="interbtn" layoutX="584.0" layoutY="682.0" mnemonicParsing="false" onAction="#handleBeginButtonClick" prefHeight="67.26" prefWidth="560.0" styleClass="custom-link" stylesheets="@../styles/styles.css" text="Intermediate Level" textFill="WHITESMOKE">
-        <opaqueInsets>
-          <Insets />
-        </opaqueInsets>
-        <cursor>
-          <Cursor fx:constant="HAND" />
-        </cursor>
-        <font>
-          <Font size="30.0" />
-        </font>
-    </Button>
-    <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="506.0" layoutY="65.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="690.0" styleClass="custom-box" stylesheets="@../styles/register.css">
-        <effect>
-            <GaussianBlur />
-        </effect>
-        <Hyperlink fx:id="homebtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../styles/page2.css" text="Home" textFill="WHITESMOKE">
-           <HBox.margin>
-               <Insets right="60.0" />
-           </HBox.margin>
-           <font>
-               <Font name="SFUIDisplay-Regular" size="30.0" />
-           </font>
-        </Hyperlink>
-        <Hyperlink fx:id="hiwbtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../styles/page2.css" text="How it works" textFill="WHITESMOKE">
-           <HBox.margin>
-               <Insets left="60.0" right="60.0" />
-           </HBox.margin>
-           <font>
-               <Font name="SFUIDisplay-Regular" size="30.0" />
-           </font>
-        </Hyperlink>
-        <Hyperlink fx:id="faqbtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../styles/page2.css" text="FAQ's" textFill="WHITESMOKE">
-           <HBox.margin>
-               <Insets left="60.0" />
-           </HBox.margin>
-           <font>
-               <Font name="SFUIDisplay-Regular" size="30.0" />
-           </font>
-        </Hyperlink>
-    </HBox>
-   <Hyperlink fx:id="loginbtn" layoutX="1523.0" layoutY="76.0" onAction="#handleLoginButtonClick" prefHeight="51.0" prefWidth="91.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../styles/register.css" text="Login" textFill="WHITESMOKE">
-      <font>
-         <Font name="SFUIDisplay-Regular" size="30.0" />
-      </font>
-   </Hyperlink>
+
 </AnchorPane>
