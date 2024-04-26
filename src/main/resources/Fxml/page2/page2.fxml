@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="1686.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.page2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="1523.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.page2Controller">
    <Button fx:id="cbtn" layoutX="134.0" layoutY="626.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
       <font>
          <Font size="25.0" />
@@ -68,14 +68,12 @@
          <Font size="63.0" />
       </font>
    </Label>
-   <ImageView cache="true" cacheHint="SPEED" fitHeight="230.0" fitWidth="340.0" layoutX="1504.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true" />
-   <TextArea fx:id="showIcon" blendMode="DARKEN" depthTest="DISABLE" editable="false" layoutX="1303.0" layoutY="262.0" prefHeight="236.0" prefWidth="245.0" stylesheets="@../../styles/page2.css" wrapText="true" />
+   <ImageView cache="true" cacheHint="SPEED" fitHeight="209.0" fitWidth="227.0" layoutX="1201.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
    <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../../image/FINAL_Logo_PNG.png" />
    </ImageView>
-   <ImageView fitHeight="205.0" fitWidth="240.0" layoutX="1590.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" />
-   <TextArea fx:id="overview" layoutX="1252.0" layoutY="539.0" prefHeight="202.0" prefWidth="347.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" />
-   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="551.0" layoutY="74.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="690.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+   <TextArea fx:id="overview" layoutX="1148.0" layoutY="539.0" prefHeight="202.0" prefWidth="347.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" />
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="464.0" layoutY="79.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="690.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
       <effect>
          <GaussianBlur />
       </effect>
@@ -104,12 +102,12 @@
          </font>
       </Hyperlink>
    </HBox>
-   <Button fx:id="nextbtn" layoutX="1357.0" layoutY="794.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="140.0" stylesheets="@../../styles/page2.css" text="Let's Go">
+   <Button fx:id="nextbtn" layoutX="1249.0" layoutY="790.0" mnemonicParsing="false" prefHeight="140.0" prefWidth="140.0" stylesheets="@../../styles/page2.css" text="Let's Go">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <ImageView fx:id="profiePic" fitHeight="74.0" fitWidth="74.0" layoutX="1516.0" layoutY="77.0">
+   <ImageView fx:id="profiePic" fitHeight="74.0" fitWidth="74.0" layoutX="1359.0" layoutY="80.0">
       <viewport>
          <Rectangle2D height="50.0" width="50.0" />
       </viewport>

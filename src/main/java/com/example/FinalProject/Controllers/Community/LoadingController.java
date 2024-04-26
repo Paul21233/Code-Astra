@@ -45,30 +45,5 @@ public class LoadingController {
             splashStage.close();
             loginStage.show();
         });
-
-
-
-//        transition.setOnFinished(event -> {
-//            // Load the community page
-//            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/Community/mainView.fxml"));
-//            Scene sc = null;
-//            try {
-//                sc = new Scene(loader.load());
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//            // Create and configure the stage for the community page
-//            Stage communityStage = new Stage();
-//            communityStage.setScene(scene);
-//            communityStage.setTitle("Community");
-//            communityStage.setResizable(false);
-//            communityStage.getIcons().add(new Image(String.valueOf(App.class.getResource("objects\\Code_Astra Logo OG.png"))));
-//
-//            // Close the loading stage and show the community stage
-//            Stage loadingStage = (Stage) txt_Title.getScene().getWindow();
-//            loadingStage.close();
-//            communityStage.show();
-//        });
     }
 }

@@ -4,9 +4,9 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.GaussianBlur?>
@@ -20,7 +20,7 @@
    <ImageView fitHeight="78.0" fitWidth="141.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../../image/FINAL_Logo_PNG.png" />
    </ImageView>
-   <ImageView fitHeight="658.0" fitWidth="495.0" layoutX="259.0" layoutY="114.0" opacity="0.76">
+   <ImageView fitHeight="612.0" fitWidth="495.0" layoutX="259.0" layoutY="160.0" opacity="0.76">
       <Image url="@../../image/sign up box.png" />
    </ImageView>
    <Button fx:id="backbtn" layoutX="209.0" layoutY="670.0" mnemonicParsing="false" onAction="#handleBackbtn" prefHeight="44.0" prefWidth="50.0" styleClass="custom-back-button" stylesheets="@../../styles/register.css" textFill="WHITESMOKE">
@@ -54,11 +54,11 @@
          <Font name="SFUIDisplay-Regular" size="12.0" />
       </font>
    </Button>
-   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="287.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="293.0" layoutY="36.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
       <effect>
          <GaussianBlur />
       </effect>
-      <Hyperlink prefHeight="27.0" prefWidth="50.0" style="-fx-underline: false; -fx-border-style: none;" text="Home" textFill="WHITESMOKE">
+      <Hyperlink fx:id="homebtn" onAction="#handleHomeButtonClick" prefHeight="27.0" prefWidth="50.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets right="40.0" />
          </HBox.margin>
@@ -66,7 +66,7 @@
             <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
       </Hyperlink>
-      <Hyperlink prefHeight="27.0" prefWidth="105.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="How it works" textFill="WHITESMOKE">
+      <Hyperlink fx:id="communitybtn" onAction="#handleCommunityButtonClick" prefHeight="27.0" prefWidth="84.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Community" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets left="40.0" right="40.0" />
          </HBox.margin>
@@ -74,7 +74,7 @@
             <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
       </Hyperlink>
-      <Hyperlink prefHeight="27.0" prefWidth="55.0" text="FAQ's" textFill="WHITESMOKE">
+      <Hyperlink fx:id="faqbtn" prefHeight="27.0" prefWidth="55.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets left="40.0" />
          </HBox.margin>
@@ -83,14 +83,19 @@
          </font>
       </Hyperlink>
    </HBox>
-   <Hyperlink fx:id="loginbtn" layoutX="895.0" layoutY="44.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/register.css" text="Login" textFill="WHITESMOKE">
+   <Hyperlink fx:id="loginbtn" layoutX="881.0" layoutY="44.0" onAction="#handleLoginButtonClick" prefHeight="44.0" prefWidth="68.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/register.css" text="Login" textFill="WHITESMOKE">
       <font>
-         <Font name="SFUIDisplay-Regular" size="18.0" />
+         <Font name="SFUIDisplay-Regular" size="22.0" />
       </font>
    </Hyperlink>
-   <ChoiceBox fx:id="levelSelect" layoutX="325.0" layoutY="197.0" prefHeight="25.0" prefWidth="255.0">
-      <cursor>
-         <Cursor fx:constant="HAND" />
-      </cursor>
-   </ChoiceBox>
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="97.0" prefHeight="67.0" prefWidth="427.0" text="Sign UP and Start Your Coding Journey!" textAlignment="CENTER" textFill="WHITESMOKE" wrapText="true">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="22.0" />
+      </font>
+   </Label>
+   <TextField fx:id="userLevelText" alignment="CENTER" editable="false" layoutX="324.0" layoutY="194.0" prefHeight="34.0" prefWidth="377.0" style="-fx-text-fill: whitesmoke;" styleClass="custom-box" stylesheets="@../../styles/register.css">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="20.0" />
+      </font>
+   </TextField>
 </AnchorPane>
