@@ -1,162 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="anchRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-            prefHeight="701.0" prefWidth="1186.0" styleClass="linear-grad" stylesheets="@../../styles/styles.css"
-            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.FinalProject.Controllers.chat.ChatController">
-   <BorderPane prefHeight="712.0" prefWidth="1088.0">
-      <right>
-         <AnchorPane fx:id="chatPane" prefHeight="663.0" prefWidth="841.0" BorderPane.alignment="CENTER">
-            <ScrollPane fx:id="scrollPane" accessibleRole="PARENT" hbarPolicy="NEVER" layoutX="14.0" layoutY="72.0"
-                        prefHeight="539.0" prefWidth="900.0" vvalue="1.0">
-               <VBox fx:id="vBox" alignment="TOP_RIGHT" prefHeight="508.0" prefWidth="877.0"/>
-            </ScrollPane>
-            <TextArea fx:id="txtMsg" accessibleRole="PARENT" layoutX="163.0" layoutY="629.0" prefHeight="43.0"
-                      prefWidth="602.0" promptText="Type your message" wrapText="true"/>
-            <Button fx:id="btnSend" accessibleRole="PARENT" layoutX="793.0" layoutY="629.0" mnemonicParsing="false"
-                    onAction="#handleSendAction" onMouseEntered="#handleSendHoverEntered" prefHeight="30.0"
-                    prefWidth="34.0">
-               <graphic>
-                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                     <Image url="@../images/send.png"/>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button fx:id="btnEmoji" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="724.0" layoutY="629.0"
-                    maxWidth="-Infinity" minHeight="19.0" minWidth="39.0" mnemonicParsing="false"
-                    onAction="#handleEmojiAction" onMouseEntered="#handleEmojiHoverEntered" prefHeight="42.0"
-                    prefWidth="41.0" styleClass="btnEmoji" text="🙄"/>
-            <TextFlow fx:id="emojiList" layoutX="505.0" layoutY="535.0" prefHeight="91.0" prefWidth="260.0"
-                      visible="false">
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😀"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😁"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😂"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😃"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😄"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😅"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😆"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😇"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😈"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😉"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😊"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😋"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😌"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😍"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😎"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😏"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😐"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😑"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😒"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😓"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😔"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😕"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😖"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😗"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😘"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😙"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😚"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😛"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😜"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😝"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😞"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😟"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😠"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😡"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😢"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😣"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😤"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😥"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😦"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😧"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😨"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😩"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😪"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😫"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😬"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😭"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😮"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😯"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😰"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😱"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😲"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😳"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😴"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😵"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😶"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😷"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😸"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😹"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😺"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😻"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😼"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😽"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😾"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="😿"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙀"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙁"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙂"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙃"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙄"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙅"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙆"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙇"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙈"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙉"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙊"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙋"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙌"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙍"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙎"/>
-               <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="🙏"/>
-            </TextFlow>
-            <Pane prefHeight="71.0" prefWidth="914.0">
-               <HBox layoutX="18.0" prefHeight="57.0" prefWidth="505.0">
-                  <Label fx:id="labelCorochat" prefHeight="56.0" prefWidth="176.0" text="CoroChat"
-                         textFill="WHITE">
-                     <font>
-                        <Font name="Rockwell" size="34.0"/>
-                     </font>
-                  </Label>
-               </HBox>
-               <Line endX="100.0" scaleX="1.2" startX="-100.0" stroke="WHITE" translateX="140.0"
-                     translateY="50.0"/>
-               <Label layoutX="147.0" layoutY="46.0" prefHeight="22.0" prefWidth="131.0"
-                      text="Take care of yourself" textFill="WHITE"/>
-               <ImageView fx:id="btnlogout" fitHeight="41.0" fitWidth="45.0" layoutX="855.0" layoutY="21.0"
-                          onMouseClicked="#HandleLogoutAction" onMouseEntered="#handleLogoutHoverEntered"
-                          pickOnBounds="true" preserveRatio="true" rotate="90.0">
-                  <Image url="@../images/logout.png"/>
-               </ImageView>
-            </Pane>
-         </AnchorPane>
-      </right>
-      <left>
-         <AnchorPane prefHeight="489.0" prefWidth="186.0" BorderPane.alignment="CENTER">
-            <ScrollPane fx:id="userScrollPane" layoutX="14.0" layoutY="73.0" prefHeight="614.0" prefWidth="232.0">
-               <VBox fx:id="vBoxUserList" prefHeight="612.0" prefWidth="211.0"/>
-            </ScrollPane>
-            <Label layoutX="14.0" layoutY="47.0" prefHeight="22.0" prefWidth="172.0" text="User connected"
-                   textAlignment="CENTER" textFill="WHITE">
+<AnchorPane prefHeight="799.0" prefWidth="1001.0" styleClass="backgroundColor" stylesheets="@../../styles/chat.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.chat.ChatController">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="980.0" layoutX="47.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Rectangle%2024.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="204.0" layoutX="41.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/CodeAstraNEWLOGO33.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="316.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+         <effect>
+            <GaussianBlur />
+         </effect>
+         <children>
+            <Hyperlink prefHeight="27.0" prefWidth="50.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
                <font>
-                  <Font name="System Bold" size="20.0"/>
+                  <Font name="SFUIDisplay-Regular" size="15.0" />
                </font>
-            </Label>
-            <HBox layoutX="14.0" layoutY="14.0" prefHeight="14.0" prefWidth="51.0" spacing="5.0">
-               <Circle fx:id="btnClose" fill="#fc5d57" onMouseClicked="#handleCloseAction"
-                       onMouseEntered="#handleCloseHoverEntered" radius="6.0" stroke="WHITE" strokeType="INSIDE"
-                       styleClass="circle-button"/>
-               <Circle fx:id="btnReduce" fill="#fdbb2d" onMouseClicked="#handleReduceAction"
-                       onMouseEntered="#handleReduceHoverEntered" radius="6.0" stroke="WHITE" strokeType="INSIDE"
-                       styleClass="circle-button"/>
-               <Circle fill="#27c941" radius="6.0" stroke="WHITE" strokeType="INSIDE" styleClass="circle-button"/>
-            </HBox>
-         </AnchorPane>
-      </left>
-   </BorderPane>
+            </Hyperlink>
+            <Hyperlink prefHeight="27.0" prefWidth="105.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="How it works" textFill="WHITESMOKE">
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink prefHeight="27.0" prefWidth="55.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="15.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </HBox>
+      <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="925.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Male%20User.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="472.0" fitWidth="282.0" layoutX="74.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/25.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="119.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat" wrappingWidth="79.696044921875">
+         <font>
+            <Font name="Inter Medium" size="33.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="74.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Communication.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="36.0" layoutX="97.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Portrait.png" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="124.0" layoutY="287.0" text="Ahmad Hasan" textFill="WHITE">
+         <font>
+            <Font name="Inter Medium" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Button fx:id="sendbtn" alignment="CENTER" layoutX="828.0" layoutY="672.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="69.0" style="-fx-background-color: 2d2d2d;" text="Send">
+         <font>
+            <Font name="Inter SemiBold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ScrollPane fx:id="scrollpane" layoutX="363.0" layoutY="267.0" prefHeight="388.0" prefWidth="532.0" />
+      <TextField fx:id="msgfield" layoutX="367.0" layoutY="672.0" prefHeight="37.0" prefWidth="455.0" />
+   </children>
 </AnchorPane>
