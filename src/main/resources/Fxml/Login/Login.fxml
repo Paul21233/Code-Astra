@@ -18,64 +18,69 @@
          <ImageView fitHeight="610.0" fitWidth="429.0" layoutX="-66.0" layoutY="-4.0" pickOnBounds="true">
             <Image url="@../../image/color.png" />
          </ImageView>
-         <Button fx:id="loginbtn" alignment="CENTER" layoutX="82.0" layoutY="420.0" mnemonicParsing="false" onAction="#connectButtonClicked" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: 2d2d2d;" text="Login">
+         <ImageView fitHeight="383.0" fitWidth="327.0" layoutX="-13.0" layoutY="113.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../image/sign%20up%20box.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="loginbtn" alignment="CENTER" layoutX="112.0" layoutY="326.0" mnemonicParsing="false" onAction="#connectButtonClicked" prefHeight="21.0" prefWidth="75.0" style="-fx-background-color: 2d2d2d;" text="Login">
             <font>
-               <Font name="SFUIDisplay-Regular" size="18.0" />
+               <Font name="Inter SemiBold" size="18.0" />
             </font>
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
-         <TextField fx:id="usernamField" layoutX="15.0" layoutY="282.0" prefHeight="38.0" prefWidth="245.0" />
-         <Text fill="WHITE" layoutX="15.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email/Username: " textAlignment="CENTER" wrappingWidth="139.314453125">
+         <TextField fx:id="usernamField" layoutX="27.0" layoutY="192.0" prefHeight="38.0" prefWidth="245.0" />
+         <Text fill="WHITE" layoutX="25.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email/Username" textAlignment="CENTER" wrappingWidth="114.314453125">
             <font>
-               <Font name="SFUIDisplay-Regular" size="18.0" />
+               <Font name="Inter Medium" size="14.0" />
             </font>
          </Text>
-         <Text fill="WHITE" layoutX="15.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" textAlignment="CENTER">
+         <PasswordField fx:id="passField" layoutX="27.0" layoutY="266.0" prefHeight="38.0" prefWidth="245.0" />
+         <Text fill="WHITE" layoutX="69.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? " textAlignment="CENTER">
             <font>
-               <Font name="SFUIDisplay-Regular" size="18.0" />
+               <Font name="Inter Medium" size="14.0" />
             </font>
          </Text>
-         <PasswordField fx:id="passField" layoutX="15.0" layoutY="360.0" prefHeight="38.0" prefWidth="245.0" />
-         <Text fill="WHITE" layoutX="-9.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account? " textAlignment="CENTER">
+         <Button fx:id="registerbtn" layoutX="100.0" layoutY="425.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: 2d2d2d;" text="Register Here! ">
             <font>
-               <Font size="16.0" />
-            </font>
-         </Text>
-         <Button fx:id="registerbtn" layoutX="171.0" layoutY="493.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: 2d2d2d;" text="Register Here! ">
-            <font>
-               <Font size="11.0" />
+               <Font name="Inter Light" size="11.0" />
             </font>
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
-         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="107.0" prefHeight="93.0" prefWidth="196.0" text="Login to Your Existing Account" textAlignment="CENTER" textFill="WHITESMOKE" wrapText="true">
+         <Text fill="WHITE" layoutX="25.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER" wrappingWidth="78.314453125">
             <font>
-               <Font name="SFUIDisplay-Regular" size="22.0" />
+               <Font name="Inter Medium" size="14.0" />
             </font>
-         </Label>
+         </Text>
       </AnchorPane>
    </right>
    <center>
       <AnchorPane prefHeight="410.0" prefWidth="238.0" BorderPane.alignment="CENTER">
-         <ImageView fitHeight="623.0" fitWidth="370.0" layoutY="-20.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../image/backgroound2.jpg" />
+         <ImageView fitHeight="629.0" fitWidth="416.0" layoutX="-46.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../image/bg_img.jpg" />
          </ImageView>
-         <ImageView fitHeight="138.0" fitWidth="195.0" layoutX="81.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../image/FINAL_Logo_PNG.png" />
+         <ImageView fitHeight="79.0" fitWidth="323.0" layoutX="24.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../image/CodeAstraNEWLOGO33.png" />
          </ImageView>
-         <Text fill="WHITE" layoutX="95.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grow with Astra! " textAlignment="CENTER" wrappingWidth="166.990234375">
+         <Text fill="WHITE" layoutX="106.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grow with Astra! " textAlignment="CENTER" wrappingWidth="158.990234375">
             <font>
-               <Font size="21.0" />
+               <Font name="Inter Medium" size="14.0" />
             </font>
          </Text>
          <Text fill="WHITE" layoutX="70.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For any queries visit codeastra.com" textAlignment="CENTER" wrappingWidth="228.021484375">
             <font>
-               <Font size="13.0" />
+               <Font name="Inter Medium" size="12.0" />
             </font>
          </Text>
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="82.0" layoutY="239.0" prefHeight="125.0" prefWidth="206.0" text="Let's dive into the code!" textAlignment="CENTER" textFill="WHITESMOKE" wrapText="true">
+            <font>
+               <Font name="Inter Medium" size="31.0" />
+            </font>
+         </Label>
       </AnchorPane>
    </center>
 </BorderPane>
