@@ -12,8 +12,8 @@ public class DatabaseManager {
     public Connection getConnection() {
         String databaseName = "CodeAstra";
         String username = "root";
-        String password = "pizza123";
-        String url = "jdbc:mysql://localhost:3307/" + databaseName;
+        String password = "";
+        String url = "jdbc:mysql://localhost:3306/" + databaseName;
 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");

@@ -20,7 +20,7 @@
          </ImageView>
          <ImageView fitHeight="383.0" fitWidth="327.0" layoutX="-13.0" layoutY="113.0" opacity="0.32" pickOnBounds="true" preserveRatio="true">
             <image>
-               <Image url="@../../image/sign%20up%20box.png" />
+               <Image url="@../../image/sign up box.png" />
             </image>
          </ImageView>
          <Button fx:id="loginbtn" alignment="CENTER" layoutX="112.0" layoutY="326.0" mnemonicParsing="false" onAction="#connectButtonClicked" prefHeight="21.0" prefWidth="75.0" style="-fx-background-color: 2d2d2d;" text="Login">
@@ -64,7 +64,7 @@
             <Image url="@../../image/bg_img.jpg" />
          </ImageView>
          <ImageView fitHeight="79.0" fitWidth="323.0" layoutX="24.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../image/CodeAstraNEWLOGO33.png" />
+            <Image url="@../../image/logo.png" />
          </ImageView>
          <Text fill="WHITE" layoutX="106.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grow with Astra! " textAlignment="CENTER" wrappingWidth="158.990234375">
             <font>

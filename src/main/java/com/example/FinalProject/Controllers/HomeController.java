@@ -1,6 +1,7 @@
 package com.example.FinalProject.Controllers;
 
 import com.example.FinalProject.App;
+import com.example.FinalProject.Controllers.Community.CommunityController;
 import com.example.FinalProject.Controllers.Login.LoginController;
 import com.example.FinalProject.Controllers.Register.registerController;
 import javafx.event.ActionEvent;
@@ -22,16 +23,7 @@ public class HomeController {
     public TextField searchbar;
 
     @FXML
-    public Button beginbtn;
-
-    @FXML
-    public Button interbtn;
-
-    @FXML
-    public Hyperlink hiwbtn;
-
-    @FXML
-    public Hyperlink homebtn;
+    public Hyperlink communitybtn;
 
     @FXML
     public Hyperlink faqbtn;
@@ -39,7 +31,13 @@ public class HomeController {
     @FXML
     public Hyperlink loginbtn;
 
-    // scene change to the register panel
+    @FXML
+    public Button beginbtn;
+
+    @FXML
+    public Button interbtn;
+
+    // scene change to the register panel (Beginner)
     @FXML
     public void handleBeginButtonClick(ActionEvent event) {
         try {
@@ -49,6 +47,7 @@ public class HomeController {
 
             // get the controller for the register page
             registerController rc = loader.getController();
+            rc.setUserLevel("beginner");
 
             // Show the register page
             Stage stage = new Stage();
@@ -63,6 +62,30 @@ public class HomeController {
         }
     }
 
+    // scene change to the register page (intermediate)
+    @FXML
+    public void handleInterButtonClick(ActionEvent event) {
+        try {
+            // load the register page FXML file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/Register/register.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the register page
+            registerController rc = loader.getController();
+            rc.setUserLevel("intermediate");
+
+            // Show the register page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) beginbtn.getScene().getWindow();
+            homeStage.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     // Scene change to the login panel
     @FXML
@@ -82,6 +105,31 @@ public class HomeController {
 
             // closing the window
             Stage homeStage = (Stage) loginbtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    // scene change to community page
+    @FXML
+    public void handleCommunityButtonClick(ActionEvent event) {
+        try{
+            // loading the login page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/community/loading_page.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the login page
+            CommunityController cc = (CommunityController) loader.getController();
+
+            // show the login page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) communitybtn.getScene().getWindow();
             homeStage.close();
         }
         catch(Exception e){

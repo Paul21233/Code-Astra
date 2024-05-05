@@ -1,5 +1,9 @@
 package com.example.FinalProject.Controllers.Register;
 
+import com.example.FinalProject.App;
+import com.example.FinalProject.Controllers.Community.CommunityController;
+import com.example.FinalProject.Controllers.HomeController;
+import com.example.FinalProject.Controllers.Login.LoginController;
 import com.example.FinalProject.Database.DatabaseManager;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,6 +13,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -38,12 +44,6 @@ public class registerController {
     public CheckBox agree_tc;
 
     @FXML
-    public Label home;
-
-    @FXML
-    public Label edit;
-
-    @FXML
     public Label about;
 
     @FXML
@@ -54,6 +54,18 @@ public class registerController {
 
     @FXML
     public Button backbtn;
+
+    @FXML
+    public Hyperlink homebtn;
+
+    @FXML
+    public Hyperlink communitybtn;
+
+    @FXML
+    public Hyperlink faqbtn;
+
+    @FXML
+    public TextField userLevelText;
 
     @FXML
     private void handleCreateAccount(ActionEvent event) {
@@ -113,6 +125,93 @@ public class registerController {
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    //
+    @FXML
+    public void handleLoginButtonClick(ActionEvent event) {
+        try{
+            // loading the login page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/Login/login.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the login page
+            LoginController lc = (LoginController) loader.getController();
+
+            // show the login page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) loginbtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    // scene change to home page
+    @FXML
+    public void handleHomeButtonClick(ActionEvent event) {
+        try{
+            // loading the login page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/home.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the login page
+            HomeController hc = (HomeController) loader.getController();
+
+            // show the login page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) homebtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    // scene change to community page
+    @FXML
+    public void handleCommunityButtonClick(ActionEvent event) {
+        try{
+            // loading the login page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/community/loading_page.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the login page
+            CommunityController cc = (CommunityController) loader.getController();
+
+            // show the login page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) communitybtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    // setting user level
+    @FXML
+    public void setUserLevel(String level) {
+        if (level.equals("beginner")) {
+            userLevelText.setText("Welcome, Beginner!");
+        } else if (level.equals("intermediate")) {
+            userLevelText.setText("Welcome, Intermediate!");
+        } else {
+            userLevelText.setText("Welcome!");
         }
     }
 }

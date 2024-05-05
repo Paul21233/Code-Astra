@@ -66,7 +66,7 @@
          <MenuButton id="userDropdown" fx:id="menuUser" focusTraversable="false" graphicTextGap="10.0"
                      mnemonicParsing="false" prefHeight="50.0" prefWidth="160.0" text="User" textFill="#e0d3de">
             <items>
-               <MenuItem id="signout" mnemonicParsing="false" onAction="#signout" text="Sign Out"/>
+               <MenuItem id="signout" mnemonicParsing="false" text="Sign Out"/>
             </items>
             <font>
                <Font size="15.0"/>

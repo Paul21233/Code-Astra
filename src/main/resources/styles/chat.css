@@ -1,17 +1,5 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
-
-.textFlow {
-	-fx-background-color: #FFFFFF;
-}
-
-.textSystemMessage {
-	-fx-background-color: red;
-}
-
-.textBroadcastMessage {
-	-fx-background-color: green;
-}
-
-.textPrivateMessage {
-	-fx-background-color: blue;
+.backgroundColor{
+	-fx-background-image: url("../image/bg_img.jpg");
+	-fx-background-size: cover;
+	-fx-background-color: linear-gradient(to top, rgb(43, 43, 43) 100%, rgb(43, 43, 43) 100%);
 }
