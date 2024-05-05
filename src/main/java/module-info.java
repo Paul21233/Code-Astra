@@ -35,12 +35,12 @@ module com.example.FinalProject {
     exports com.example.FinalProject.Controllers.Register;
     exports com.example.FinalProject.Controllers.otherController;
     exports com.example.FinalProject.Controllers.ChatBot;
+    exports com.example.FinalProject.Controllers.Community;
+    exports com.example.FinalProject.Controllers.chat;
 //    exports com.example.FinalProject.Models;
 //    exports com.example.FinalProject.Views;
 
     opens com.example.FinalProject.Controllers.Register to javafx.fxml;
-    exports com.example.FinalProject.Controllers.Community;
-    exports com.example.FinalProject.Controllers.chat;
     exports com.example.FinalProject.Database;
     opens com.example.FinalProject.Database to javafx.fxml;
     opens com.example.FinalProject.Controllers.Community to javafx.fxml;

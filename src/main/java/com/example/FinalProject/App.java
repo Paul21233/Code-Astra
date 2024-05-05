@@ -15,7 +15,8 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         try{
-            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/ChatBot/chatbot.fxml"));
+//            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/ChatBot/chatbot.fxml"));
+            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/home.fxml"));
             Scene scene = new Scene(root.load());
             stage.setScene(scene);
             stage.show();

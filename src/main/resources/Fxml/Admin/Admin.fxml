@@ -24,7 +24,7 @@
    </Label>
    <Button layoutX="703.0" layoutY="29.0" mnemonicParsing="false" onAction="#onLogoutAction" prefHeight="37.0" prefWidth="89.0" style="-fx-alignment: center; -fx-background-color: black; -fx-font-weight: bold; -fx-font-family: SF UI Display; -fx-font-size: 14px; -fx-cursor: hand;" stylesheets="@../../styles/admin.css" text="Log Out" textFill="WHITE" />
    <TabPane fx:id="tabPane" layoutY="99.0" prefHeight="488.0" prefWidth="834.0" style="-fx-border-color: #1f1e1e; -fx-border-width: 2px;" tabClosingPolicy="UNAVAILABLE">
-      <Tab fx:id="registerMemberTab" style="-fx-background-color: black; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 3px;" text="Register a Member">
+      <Tab fx:id="registerMemberTab" style="-fx-background-color: black; -fx-cursor: hand; -fx-border-color: white; -fx-border-width: 2px; -fx-border-radius: 3px; -fx-text-fill: whitesmoke;" text="Register a Member">
          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="829.0" stylesheets="@../../styles/admin.css">
             <Label layoutX="279.0" layoutY="133.0" style="-fx-font-family: SF UI Display;" stylesheets="@../../styles/admin.css" text="Member name:" textFill="WHITESMOKE">
                <font>
