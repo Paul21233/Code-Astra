@@ -50,9 +50,6 @@ public class registerController {
     public Hyperlink loginbtn;
 
     @FXML
-    public ChoiceBox levelSelect;
-
-    @FXML
     public Button backbtn;
 
     @FXML
@@ -91,7 +88,34 @@ public class registerController {
 
                     int rowsInserted = statement.executeUpdate();
                     if (rowsInserted > 0) {
-                        System.out.println("User registered successfully!");
+                        String level = userLevelText.getText().trim();
+                        // User registered successfully
+                        // Redirect based on user level
+                        if (level.equalsIgnoreCase("beginner")) {
+                            // Load page for beginners
+                            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/page2/page2.fxml"));
+                            Parent root = null;
+                            try {
+                                root = loader.load();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                            Stage stage = new Stage();
+                            stage.setScene(new Scene(root));
+                            stage.show();
+                        } else if (level.equalsIgnoreCase("intermediate")) {
+                            // Load page for intermediates
+                            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/interPage/interpage.fxml"));
+                            Parent root = null;
+                            try {
+                                root = loader.load();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                            Stage stage = new Stage();
+                            stage.setScene(new Scene(root));
+                            stage.show();
+                        }
                     } else {
                         System.out.println("Failed to register user!");
                     }

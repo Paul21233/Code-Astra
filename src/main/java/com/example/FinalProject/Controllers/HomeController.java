@@ -4,6 +4,7 @@ import com.example.FinalProject.App;
 import com.example.FinalProject.Controllers.Community.CommunityController;
 import com.example.FinalProject.Controllers.Login.LoginController;
 import com.example.FinalProject.Controllers.Register.registerController;
+import com.example.FinalProject.Controllers.otherController.page2Controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -36,6 +37,9 @@ public class HomeController {
 
     @FXML
     public Button interbtn;
+
+    @FXML
+    public Button page2;
 
     // scene change to the register panel (Beginner)
     @FXML
@@ -130,6 +134,35 @@ public class HomeController {
 
             // closing the window
             Stage homeStage = (Stage) communitybtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void handleFaqButtonClick(ActionEvent event) {
+
+    }
+
+    @FXML
+    public void handlepage2ButtonClick(ActionEvent event) {
+        try{
+            // loading the login page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/page2/page2.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the login page
+            page2Controller pc = (page2Controller) loader.getController();
+
+            // show the login page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) page2.getScene().getWindow();
             homeStage.close();
         }
         catch(Exception e){
