@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="742.0" prefWidth="1038.0" styleClass="backgroundColor" stylesheets="@../../styles/communitymainpage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.Community.CommunityMainPageController">
+   <children>
+      <ImageView fitHeight="45.0" fitWidth="204.0" layoutX="31.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Graphics/UIU%20-%20DBMS/CodeAstraNEWLOGO33.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="306.0" layoutY="44.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+         <effect>
+            <GaussianBlur />
+         </effect>
+         <children>
+            <Hyperlink prefHeight="27.0" prefWidth="50.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink prefHeight="27.0" prefWidth="105.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="How it works" textFill="WHITESMOKE">
+               <HBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink prefHeight="27.0" prefWidth="55.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SFUIDisplay-Regular" size="15.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </HBox>
+      <ImageView fitHeight="42.0" fitWidth="41.0" layoutX="950.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/Male%20User.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="569.0" fitWidth="803.0" layoutX="31.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/backgroound3%20copy%20copy.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="42.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Community Page" wrappingWidth="227.696044921875">
+         <font>
+            <Font name="Inter Medium" size="27.0" />
+         </font>
+      </Text>
+      <ScrollBar layoutX="803.0" layoutY="171.0" orientation="VERTICAL" prefHeight="522.0" prefWidth="14.0" />
+   </children>
+</AnchorPane>
