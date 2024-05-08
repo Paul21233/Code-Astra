@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="895.0" prefWidth="1418.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.page2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="1523.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.page2Controller">
    <Button fx:id="cbtn" layoutX="79.0" layoutY="623.0" mnemonicParsing="false" onAction="#handleCButtonClick" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
       <font>
          <Font size="25.0" />
@@ -68,44 +68,44 @@
          <Font size="63.0" />
       </font>
    </Label>
-   <ImageView fx:id="showicon" cache="true" cacheHint="SPEED" fitHeight="209.0" fitWidth="227.0" layoutX="1114.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="showicon" cache="true" cacheHint="SPEED" fitHeight="209.0" fitWidth="227.0" layoutX="1201.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true" />
    <ImageView fitHeight="93.0" fitWidth="292.0" layoutX="33.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../../image/logo.png" />
    </ImageView>
-   <TextArea fx:id="overview" editable="false" layoutX="1053.0" layoutY="547.0" prefHeight="202.0" prefWidth="347.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" wrapText="true">
+   <TextArea fx:id="overview" editable="false" layoutX="1143.0" layoutY="548.0" prefHeight="202.0" prefWidth="347.0" styleClass="custom-textarea" stylesheets="@../../styles/page2.css" wrapText="true">
       <font>
          <Font name="SFUIDisplay-Regular" size="12.0" />
       </font></TextArea>
-   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="464.0" layoutY="79.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="566.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="464.0" layoutY="79.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="73.0" prefWidth="690.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
       <effect>
          <GaussianBlur />
       </effect>
-      <Hyperlink fx:id="homebtn" prefHeight="36.0" prefWidth="76.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Home" textFill="WHITESMOKE">
+      <Hyperlink fx:id="homebtn" onAction="#handleHomeButtonClick" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Home" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets right="60.0" />
          </HBox.margin>
          <font>
-            <Font name="SFUIDisplay-Regular" size="22.0" />
+            <Font name="SFUIDisplay-Regular" size="30.0" />
          </font>
       </Hyperlink>
-      <Hyperlink fx:id="ommunitybtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Community" textFill="WHITESMOKE">
+      <Hyperlink fx:id="communitybtn" onAction="#handleCommunityButtonClick" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Community" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets left="60.0" right="60.0" />
          </HBox.margin>
          <font>
-            <Font name="SFUIDisplay-Regular" size="22.0" />
+            <Font name="SFUIDisplay-Regular" size="30.0" />
          </font>
       </Hyperlink>
-      <Hyperlink style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="FAQ's" textFill="WHITESMOKE">
+      <Hyperlink fx:id="faqbtn" onAction="#handleFaqButtonClick" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="FAQ's" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets left="60.0" />
          </HBox.margin>
          <font>
-            <Font name="SFUIDisplay-Regular" size="22.0" />
+            <Font name="SFUIDisplay-Regular" size="30.0" />
          </font>
       </Hyperlink>
    </HBox>
-   <Button fx:id="nextbtn" layoutX="1167.0" layoutY="783.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="126.0" stylesheets="@../../styles/page2.css" text="Next">
+   <Button fx:id="nextbtn" layoutX="1249.0" layoutY="790.0" mnemonicParsing="false" onAction="#handleNextButtonClick" prefHeight="41.0" prefWidth="126.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Next" textFill="WHITESMOKE">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
@@ -113,7 +113,7 @@
          <Font size="27.0" />
       </font>
    </Button>
-   <ImageView fx:id="profiePic" fitHeight="74.0" fitWidth="74.0" layoutX="1268.0" layoutY="71.0">
+   <ImageView fx:id="profiePic" fitHeight="74.0" fitWidth="74.0" layoutX="1359.0" layoutY="80.0">
       <viewport>
          <Rectangle2D height="50.0" width="50.0" />
       </viewport>

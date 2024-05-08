@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="968.0" prefWidth="1481.0" styleClass="backgroundColor" stylesheets="@../../styles/resource.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.resource.javaReController">
+
+    <children>
+        <Label layoutX="336.0" layoutY="36.0" text="Java Resources" />
+        <WebView fx:id="javaResource" layoutX="232.0" layoutY="174.0" prefHeight="774.0" prefWidth="1236.0" />
+      <Button layoutX="19.0" layoutY="889.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="193.0" styleClass="custom-link" stylesheets="@../../styles/resource.css" text="Back" textFill="WHITESMOKE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="64.0" fitWidth="255.0" layoutX="41.0" layoutY="54.0">
+         <image>
+            <Image url="@../../image/logo.png" />
+         </image>
+      </ImageView>
+    </children>
+
+</AnchorPane>

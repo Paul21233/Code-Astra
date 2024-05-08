@@ -14,14 +14,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class HomeController {
-
-    @FXML
-    public TextField searchbar;
 
     @FXML
     public Hyperlink communitybtn;
@@ -56,6 +54,8 @@ public class HomeController {
             // Show the register page
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
             stage.show();
 
             // closing the window
@@ -81,6 +81,8 @@ public class HomeController {
             // Show the register page
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
             stage.show();
 
             // closing the window
@@ -105,6 +107,8 @@ public class HomeController {
             // show the login page
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
             stage.show();
 
             // closing the window
@@ -130,6 +134,8 @@ public class HomeController {
             // show the login page
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
             stage.show();
 
             // closing the window
@@ -141,28 +147,26 @@ public class HomeController {
         }
     }
 
+
     @FXML
     public void handleFaqButtonClick(ActionEvent event) {
-
-    }
-
-    @FXML
-    public void handlepage2ButtonClick(ActionEvent event) {
         try{
-            // loading the login page fxml file
-            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/page2/page2.fxml"));
+            // loading the faq page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/faq.fxml"));
             Parent root = loader.load();
 
-            // get the controller for the login page
-            page2Controller pc = (page2Controller) loader.getController();
+            // get the controller for the faq page
+            faqController fc = (faqController) loader.getController();
 
-            // show the login page
+            // show the faq page
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
             stage.show();
 
             // closing the window
-            Stage homeStage = (Stage) page2.getScene().getWindow();
+            Stage homeStage = (Stage) communitybtn.getScene().getWindow();
             homeStage.close();
         }
         catch(Exception e){

@@ -2,7 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Hyperlink?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.GaussianBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,50 +11,50 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="968.0" prefWidth="1381.0" styleClass="backgroundColor" stylesheets="@../../styles/problem.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.problemController">
+
+<AnchorPane prefHeight="968.0" prefWidth="1481.0" styleClass="backgroundColor" stylesheets="@../../styles/interPage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.problemController">
    <children>
-      <ImageView fitHeight="60.0" fitWidth="260.0" layoutX="34.0" layoutY="69.0">
-         <image>
-            <Image url="@../../image/logo.png" />
-         </image>
-      </ImageView>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="374.0" layoutY="63.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="566.0" styleClass="custom-box" stylesheets="@../../styles/register.css">
+      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="465.0" layoutY="71.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="494.0" styleClass="custom-box" stylesheets="@../../styles/interPage.css">
          <effect>
             <GaussianBlur />
          </effect>
          <children>
-            <Hyperlink fx:id="homebtn" prefHeight="36.0" prefWidth="76.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Home" textFill="WHITESMOKE">
+            <Hyperlink fx:id="homebtn" onAction="#homebtnAction" prefHeight="39.0" prefWidth="74.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
                <HBox.margin>
-                  <Insets right="60.0" />
+                  <Insets right="40.0" />
                </HBox.margin>
                <font>
-                  <Font name="SFUIDisplay-Regular" size="22.0" />
+                  <Font name="SFUIDisplay-Regular" size="21.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="communitybtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Community" textFill="WHITESMOKE">
+            <Hyperlink fx:id="communitybtnnav" onAction="#communitybtnnavAction" prefHeight="39.0" prefWidth="121.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Community" textFill="WHITESMOKE">
                <HBox.margin>
-                  <Insets left="60.0" right="60.0" />
+                  <Insets left="40.0" right="40.0" />
                </HBox.margin>
                <font>
-                  <Font name="SFUIDisplay-Regular" size="22.0" />
+                  <Font name="SFUIDisplay-Regular" size="21.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="faqbtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="FAQ's" textFill="WHITESMOKE">
+            <Hyperlink fx:id="faqbtn" onAction="#faqbtnAction" prefHeight="33.0" prefWidth="67.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
                <HBox.margin>
-                  <Insets left="60.0" />
+                  <Insets left="40.0" />
                </HBox.margin>
                <font>
-                  <Font name="SFUIDisplay-Regular" size="22.0" />
+                  <Font name="SFUIDisplay-Regular" size="21.0" />
                </font>
             </Hyperlink>
          </children>
       </HBox>
-      <WebView fx:id="showhackerrank" layoutX="19.0" layoutY="215.0" prefHeight="734.0" prefWidth="1347.0" />
-      <ImageView fx:id="profilepic" fitHeight="57.0" fitWidth="57.0" layoutX="1279.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
-      <TextField fx:id="profilebtn" layoutX="1076.0" layoutY="85.0">
+      <ImageView fitHeight="66.0" fitWidth="269.0" layoutX="24.0" layoutY="68.0">
+         <image>
+            <Image url="@../../image/logo.png" />
+         </image>
+      </ImageView>
+      <WebView fx:id="problemView" layoutX="16.0" layoutY="251.0" prefHeight="700.0" prefWidth="1445.0" />
+      <Label layoutX="550.0" layoutY="142.0" text="Hacker Rank" textFill="WHITESMOKE">
          <font>
-            <Font name="SFUIDisplay-Regular" size="12.0" />
+            <Font size="59.0" />
          </font>
-      </TextField>
+      </Label>
    </children>
 </AnchorPane>

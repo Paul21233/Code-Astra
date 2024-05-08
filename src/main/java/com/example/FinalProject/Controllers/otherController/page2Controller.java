@@ -1,12 +1,21 @@
 package com.example.FinalProject.Controllers.otherController;
 
+import com.example.FinalProject.App;
+import com.example.FinalProject.Controllers.Community.CommunityController;
+import com.example.FinalProject.Controllers.HomeController;
+import com.example.FinalProject.Controllers.faqController;
+import com.example.FinalProject.Controllers.resource.javaReController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import com.example.FinalProject.App;
+import javafx.stage.Stage;
 
 import java.util.Objects;
 
@@ -43,10 +52,13 @@ public class page2Controller {
     public Button nextbtn;
 
     @FXML
-    public void initialize()
-    {
+    public Hyperlink homebtn;
 
-    }
+    @FXML
+    public Hyperlink communitybtn;
+
+    @FXML
+    public Hyperlink faqbtn;
 
     @FXML
     public void handleHtmlButtonClick(ActionEvent event) {
@@ -89,5 +101,121 @@ public class page2Controller {
         Image cppIcon = new Image(Objects.requireNonNull(App.class.getResourceAsStream("/image/cpp_icon.png")));
         showicon.setImage(cppIcon);
         overview.setText("C++ is a powerful and versatile programming language derived from C. It was developed by Bjarne Stroustrup in the 1980s and introduced object-oriented programming (OOP) features to C, such as classes and inheritance. C++ combines the features of both high-level and low-level languages, providing developers with control over system resources while also supporting modern programming concepts like polymorphism and encapsulation. It is commonly used in game development, system software, and performance-critical applications.");
+    }
+
+    @FXML
+    public void handleFaqButtonClick(ActionEvent actionEvent) {
+        try{
+            // loading the faq page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/faq.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the faq page
+            faqController fc = (faqController) loader.getController();
+
+            // show the faq page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) communitybtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void handleHomeButtonClick(ActionEvent event) {
+        try{
+            // loading the login page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/home.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the login page
+            HomeController hc = (HomeController) loader.getController();
+
+            // show the login page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) homebtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void handleCommunityButtonClick(ActionEvent event) {
+        try{
+            // loading the login page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/community/loading_page.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the login page
+            CommunityController cc = (CommunityController) loader.getController();
+
+            // show the login page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Code Astra");
+            stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) communitybtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void handleNextButtonClick(ActionEvent event) {
+        if (javabtn.isPressed()){
+            try{
+                FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/resources/javaResource.fxml"));
+                Parent root = loader.load();
+
+                javaReController jc = (javaReController) loader.getController();
+
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.setTitle("Code Astra");
+                stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
+                stage.show();
+            }
+            catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+        else if (pythonbtn.isPressed()){
+            try{
+                FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/resources/javaResource.fxml"));
+                Parent root = loader.load();
+
+                javaReController jc = (javaReController) loader.getController();
+
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.setTitle("Code Astra");
+                stage.getIcons().add(new Image(String.valueOf(App.class.getResource("/image/Code_Astra Logo OG.png"))));
+                stage.show();
+            }
+            catch(Exception e){
+                e.printStackTrace();
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@ import com.example.FinalProject.App;
 import com.example.FinalProject.Controllers.Community.CommunityController;
 import com.example.FinalProject.Controllers.HomeController;
 import com.example.FinalProject.Controllers.Login.LoginController;
+import com.example.FinalProject.Controllers.faqController;
 import com.example.FinalProject.Database.DatabaseManager;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -181,14 +182,14 @@ public class registerController {
     @FXML
     public void handleHomeButtonClick(ActionEvent event) {
         try{
-            // loading the login page fxml file
+            // loading the home page fxml file
             FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/home.fxml"));
             Parent root = loader.load();
 
-            // get the controller for the login page
+            // get the controller for the home page
             HomeController hc = (HomeController) loader.getController();
 
-            // show the login page
+            // show the home page
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.show();
@@ -206,14 +207,38 @@ public class registerController {
     @FXML
     public void handleCommunityButtonClick(ActionEvent event) {
         try{
-            // loading the login page fxml file
+            // loading the community page fxml file
             FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/community/loading_page.fxml"));
             Parent root = loader.load();
 
-            // get the controller for the login page
+            // get the controller for the community page
             CommunityController cc = (CommunityController) loader.getController();
 
-            // show the login page
+            // show the community page
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+            // closing the window
+            Stage homeStage = (Stage) communitybtn.getScene().getWindow();
+            homeStage.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void handleFaqButtonClick(ActionEvent event) {
+        try{
+            // loading the faq page fxml file
+            FXMLLoader loader = new FXMLLoader(App.class.getResource("/Fxml/faq.fxml"));
+            Parent root = loader.load();
+
+            // get the controller for the faq page
+            faqController fc = (faqController) loader.getController();
+
+            // show the faq page
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.show();

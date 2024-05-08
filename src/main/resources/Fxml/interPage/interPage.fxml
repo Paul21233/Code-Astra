@@ -14,12 +14,12 @@
 
 <AnchorPane prefHeight="815.0" prefWidth="1242.0" styleClass="backgroundColor" stylesheets="@../../styles/interPage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.interPageController">
    <children>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="372.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="483.0" styleClass="custom-box" stylesheets="@../../styles/interPage.css">
+      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="372.0" layoutY="47.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="494.0" styleClass="custom-box" stylesheets="@../../styles/interPage.css">
          <effect>
             <GaussianBlur />
          </effect>
          <children>
-            <Hyperlink fx:id="homebtn" onAction="#homebtnAction" prefHeight="33.0" prefWidth="65.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
+            <Hyperlink fx:id="homebtn" onAction="#homebtnAction" prefHeight="39.0" prefWidth="74.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
                <HBox.margin>
                   <Insets right="40.0" />
                </HBox.margin>
@@ -27,7 +27,7 @@
                   <Font name="SFUIDisplay-Regular" size="21.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="communitybtnnav" onAction="#communitybtnnavAction" prefHeight="33.0" prefWidth="117.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Community" textFill="WHITESMOKE">
+            <Hyperlink fx:id="communitybtnnav" onAction="#communitybtnnavAction" prefHeight="39.0" prefWidth="121.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Community" textFill="WHITESMOKE">
                <HBox.margin>
                   <Insets left="40.0" right="40.0" />
                </HBox.margin>
@@ -35,7 +35,7 @@
                   <Font name="SFUIDisplay-Regular" size="21.0" />
                </font>
             </Hyperlink>
-            <Hyperlink fx:id="faqbtn" prefHeight="33.0" prefWidth="67.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
+            <Hyperlink fx:id="faqbtn" onAction="#faqbtnAction" prefHeight="33.0" prefWidth="67.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
                <HBox.margin>
                   <Insets left="40.0" />
                </HBox.margin>
@@ -66,10 +66,18 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="76.0" layoutY="280.0" prefHeight="138.0" prefWidth="615.0" text="How do you wish to connect with us?" textFill="WHITESMOKE" wrapText="true">
+      <Label layoutX="76.0" layoutY="280.0" prefHeight="138.0" prefWidth="794.0" text="How do you wish to connect with us?" textFill="WHITESMOKE" wrapText="true">
          <font>
             <Font name="SFUIDisplay-Regular" size="48.0" />
          </font>
       </Label>
+      <Button fx:id="resources" layoutX="574.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleResourceButtonClick" prefHeight="55.0" prefWidth="227.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Resources" textFill="WHITESMOKE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

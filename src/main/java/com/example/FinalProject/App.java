@@ -15,7 +15,7 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception{
         try{
-            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/interpage/problemPage.fxml"));
+            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/chat/ChatMainPage.fxml"));
 //            FXMLLoader root = new FXMLLoader(App.class.getResource("/Fxml/home.fxml"));
             Scene scene = new Scene(root.load());
             stage.setScene(scene);
