@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="968.0" prefWidth="1523.0" styleClass="backgroundColor" stylesheets="@../../styles/page2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.otherController.page2Controller">
-   <Button fx:id="cbtn" layoutX="79.0" layoutY="623.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
+   <Button fx:id="cbtn" layoutX="79.0" layoutY="623.0" mnemonicParsing="false" onAction="#handleCButtonClick" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C" textFill="WHITESMOKE">
       <font>
          <Font size="25.0" />
       </font>
@@ -31,7 +31,7 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <Button fx:id="pythonbtn" layoutX="417.0" layoutY="529.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Python" textFill="WHITESMOKE">
+   <Button fx:id="pythonbtn" layoutX="417.0" layoutY="529.0" mnemonicParsing="false" onAction="#handlePythonButtonClick" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Python" textFill="WHITESMOKE">
       <font>
          <Font size="25.0" />
       </font>
@@ -39,7 +39,7 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <Button fx:id="cppbtn" layoutX="587.0" layoutY="529.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C++" textFill="WHITESMOKE">
+   <Button fx:id="cppbtn" layoutX="587.0" layoutY="529.0" mnemonicParsing="false" onAction="#handleCppButtonClick" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="C++" textFill="WHITESMOKE">
       <font>
          <Font size="25.0" />
       </font>
@@ -47,7 +47,7 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <Button fx:id="javabtn" layoutX="80.0" layoutY="529.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Java" textFill="WHITESMOKE">
+   <Button fx:id="javabtn" layoutX="80.0" layoutY="529.0" mnemonicParsing="false" onAction="#handleJavaButtonClick" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Java" textFill="WHITESMOKE">
       <font>
          <Font size="25.0" />
       </font>
@@ -55,7 +55,7 @@
          <Cursor fx:constant="HAND" />
       </cursor>
    </Button>
-   <Button fx:id="cssbtn" layoutX="247.0" layoutY="623.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="CSS" textFill="WHITESMOKE">
+   <Button fx:id="cssbtn" layoutX="247.0" layoutY="623.0" mnemonicParsing="false" onAction="#handleCssButtonClick" prefHeight="53.0" prefWidth="134.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="CSS" textFill="WHITESMOKE">
       <font>
          <Font size="25.0" />
       </font>
@@ -80,7 +80,7 @@
       <effect>
          <GaussianBlur />
       </effect>
-      <Hyperlink fx:id="homebtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Home" textFill="WHITESMOKE">
+      <Hyperlink fx:id="homebtn" onAction="#handleHomeButtonClick" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Home" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets right="60.0" />
          </HBox.margin>
@@ -88,7 +88,7 @@
             <Font name="SFUIDisplay-Regular" size="30.0" />
          </font>
       </Hyperlink>
-      <Hyperlink fx:id="ommunitybtn" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Community" textFill="WHITESMOKE">
+      <Hyperlink fx:id="communitybtn" onAction="#handleCommunityButtonClick" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="Community" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets left="60.0" right="60.0" />
          </HBox.margin>
@@ -96,7 +96,7 @@
             <Font name="SFUIDisplay-Regular" size="30.0" />
          </font>
       </Hyperlink>
-      <Hyperlink style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="FAQ's" textFill="WHITESMOKE">
+      <Hyperlink fx:id="faqbtn" onAction="#handleFaqButtonClick" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" stylesheets="@../../styles/page2.css" text="FAQ's" textFill="WHITESMOKE">
          <HBox.margin>
             <Insets left="60.0" />
          </HBox.margin>
@@ -105,7 +105,7 @@
          </font>
       </Hyperlink>
    </HBox>
-   <Button fx:id="nextbtn" layoutX="1249.0" layoutY="790.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="126.0" stylesheets="@../../styles/page2.css" text="Next">
+   <Button fx:id="nextbtn" layoutX="1249.0" layoutY="790.0" mnemonicParsing="false" onAction="#handleNextButtonClick" prefHeight="41.0" prefWidth="126.0" styleClass="custom-link" stylesheets="@../../styles/page2.css" text="Next" textFill="WHITESMOKE">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>

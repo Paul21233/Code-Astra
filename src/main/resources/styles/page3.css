@@ -1,0 +1,49 @@
+.backgroundColor{
+    -fx-background-image: url("../image/bg_img.jpg");
+    /*-fx-background-repeat: no repeat;*/
+    -fx-background-size: cover;
+    -fx-background-color: linear-gradient(to top, rgb(43, 43, 43) 100%, rgb(43, 43, 43) 100%);
+}
+
+.custom-box{
+    -fx-background-color: #2b2b2b;
+    -fx-effect: dropshadow(gaussian, rgba(204, 204, 204, 0.82), 10, 0, 0, 0);
+    -fx-shape: "M 20,0 L 681,0 Q 701,0 701,20 L 701,80 Q 701,100 681,100 L 20,100 Q 0,100 0,80 L 0,20 Q 0,0 20,0 Z";
+}
+
+.custom-link{
+    -fx-border-width: 1px solid;
+    -fx-shape: "M 70,0 L 631,0 Q 701,0 701,70 L 701,30 Q 701,100 631,100 L 70,100 Q 0,100 0,30 L 0,70 Q 0,0 70,0 Z";
+
+    -fx-border-color: whitesmoke;
+    -fx-background-color: rgba(176, 174, 174, 0);
+    /*-fx-effect: dropshadow(gaussian, rgba(204, 204, 204, 0.82), 10, 0, 0, 0);*/
+    -fx-underline: false;
+    /*padding: 10px 20px;*/
+    /*margin: 10px;*/
+}
+
+.custom-link:pressed{
+    /*-fx-background-color: transparent;*/
+    -fx-border-width: 1px;
+    -fx-border-color: whitesmoke;
+}
+
+.custom-textarea{
+    -fx-text-fill: whitesmoke;
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #2b2b2b;
+}
+
+.custom-circle-button{
+    -fx-border-width: 1px solid;
+    -fx-shape: "M 57.5,57.5 A 57.5,57.5 0 1,1 57.5,0 A 57.5,57.5 0 0,1 115,57.5 A 57.5,57.5 0 1,1 57.5,115 A 57.5,57.5 0 1,1 57.5,57.5 Z";
+    -fx-border-color: whitesmoke;
+    -fx-background-color: rgba(176, 174, 174, 0);
+    -fx-underline: false;
+    -fx-background-radius: 50%;
+    -fx-min-width: 115px;
+    -fx-min-height: 115px;
+    -fx-max-width: 115px;
+    -fx-max-height: 115px;
+}

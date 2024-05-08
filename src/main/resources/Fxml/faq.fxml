@@ -11,60 +11,55 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="800.0" prefWidth="1000.0" styleClass="backgroundColor" stylesheets="@../styles/faq.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FinalProject.Controllers.faqController">
-   <children>
-      <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="287.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../styles/register.css">
-         <effect>
-            <GaussianBlur />
-         </effect>
-         <children>
-            <Hyperlink fx:id="homebtn" onAction="#handleHomeButtonClick" prefHeight="27.0" prefWidth="50.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
-               <HBox.margin>
-                  <Insets right="40.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="SFUIDisplay-Regular" size="15.0" />
-               </font>
-            </Hyperlink>
-            <Hyperlink fx:id="communitybtn" onAction="#handleCommunityButtonClick" prefHeight="27.0" prefWidth="84.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Community" textFill="WHITESMOKE">
-               <HBox.margin>
-                  <Insets left="40.0" right="40.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="SFUIDisplay-Regular" size="15.0" />
-               </font>
-            </Hyperlink>
-            <Hyperlink fx:id="faqbtn" prefHeight="27.0" prefWidth="55.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
-               <HBox.margin>
-                  <Insets left="40.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="SFUIDisplay-Regular" size="15.0" />
-               </font>
-            </Hyperlink>
-         </children>
-      </HBox>
-      <ImageView fitHeight="41.0" fitWidth="215.0" layoutX="14.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../image/logo.png" />
-         </image>
-      </ImageView>
-      <TextArea layoutX="26.0" layoutY="256.0" prefHeight="506.0" prefWidth="949.0" text="✦ What is CodeAstra?&#10;&#10;CodeAstra is an online platform designed to help individuals learn how to code. Whether you're a beginner or an experienced programmer, CodeAstra offers a wide range of courses and resources to enhance your coding skills.&#10;&#10;✦ How does CodeAstra work?&#10;&#10;CodeAstra provides interactive coding tutorials, exercises, and projects across various programming languages and technologies. Users can access these resources, learn at their own pace, and track their progress through our intuitive interface.&#10;&#10;✦ What programming languages and technologies does CodeAstra cover?&#10;CodeAstra covers a diverse range of programming languages and technologies, including but not limited to Python, JavaScript, HTML/CSS, Java, C++, SQL, and more. We regularly update our curriculum to reflect industry trends and demands.&#10;&#10;✦ Is there a ranking system on CodeAstra?&#10;&#10;Yes, CodeAstra features a ranking system that allows users to track their progress and compete with others. By completing coding challenges, projects, and quizzes, users earn points and climb the leaderboard, fostering a sense of achievement and healthy competition within the community.&#10;&#10;✦ Can I interact with other learners on CodeAstra?&#10;&#10;Absolutely! CodeAstra fosters a vibrant community where learners can interact, ask questions, and collaborate on coding projects. Our discussion forums and chat features enable users to seek help, share insights, and connect with like-minded individuals from around the world.&#10;&#10;✦ How can I get help if I'm stuck on a coding problem?&#10;&#10;If you encounter difficulties while learning on CodeAstra, you can seek assistance from our knowledgeable community members via the discussion forums or live chat. Additionally, our support team is readily available to address any technical issues or inquiries you may have.&#10;&#10;✦ Are there any prerequisites for using CodeAstra?&#10;&#10;No prior coding experience is required to get started with CodeAstra. Whether you're a complete beginner or a seasoned developer looking to expand your skills, our platform offers resources tailored to various skill levels.&#10;&#10;✦ Is CodeAstra suitable for schools or educational institutions?&#10;&#10;Yes, CodeAstra is an excellent resource for schools, educational institutions, and educators seeking to incorporate coding education into their curriculum. We offer special plans and features designed specifically for academic use, including classroom management tools and student progress tracking.&#10;&#10;✦ Can I access CodeAstra on mobile devices?&#10;&#10;No they can not. It is only suitable for desktop &#10;&#10;✦ How can I get started with CodeAstra?&#10;&#10;Getting started with CodeAstra is simple! Visit our website, sign up for an account, and explore our wide range of courses and resources. Whether you're looking to learn a new programming language or enhance your existing skills, CodeAstra is here to support your coding journey." wrapText="true" />
-      <Text fill="WHITE" layoutX="302.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frequently Asked Questions">
-         <font>
-            <Font name="Inter SemiBold" size="29.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="926.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../../../Graphics/UIU%20-%20DBMS/Male%20User.png" />
-         </image>
-      </ImageView>
-      <Hyperlink fx:id="faqbtn1" layoutX="839.0" layoutY="61.0" prefHeight="27.0" prefWidth="94.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Dashboard" textFill="WHITESMOKE">
+   <HBox alignment="CENTER" blendMode="LIGHTEN" layoutX="287.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="427.0" styleClass="custom-box" stylesheets="@../styles/register.css">
+      <effect>
+         <GaussianBlur />
+      </effect>
+      <Hyperlink fx:id="homebtn" onAction="#handleHomeButtonClick" prefHeight="27.0" prefWidth="50.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Home" textFill="WHITESMOKE">
+         <HBox.margin>
+            <Insets right="40.0" />
+         </HBox.margin>
          <font>
             <Font name="SFUIDisplay-Regular" size="15.0" />
          </font>
       </Hyperlink>
-   </children>
+      <Hyperlink fx:id="communitybtn" onAction="#handleCommunityButtonClick" prefHeight="27.0" prefWidth="90.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Community" textFill="WHITESMOKE">
+         <HBox.margin>
+            <Insets left="40.0" right="40.0" />
+         </HBox.margin>
+         <font>
+            <Font name="SFUIDisplay-Regular" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="faqbtn" prefHeight="27.0" prefWidth="55.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="FAQ's" textFill="WHITESMOKE">
+         <HBox.margin>
+            <Insets left="40.0" />
+         </HBox.margin>
+         <font>
+            <Font name="SFUIDisplay-Regular" size="15.0" />
+         </font>
+      </Hyperlink>
+   </HBox>
+   <ImageView fitHeight="41.0" fitWidth="215.0" layoutX="14.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../image/logo.png" />
+      </image>
+   </ImageView>
+   <TextArea layoutX="26.0" layoutY="256.0" prefHeight="506.0" prefWidth="949.0" text="✦ What is CodeAstra?&#10;&#10;CodeAstra is an online platform designed to help individuals learn how to code. Whether you're a beginner or an experienced programmer, CodeAstra offers a wide range of courses and resources to enhance your coding skills.&#10;&#10;✦ How does CodeAstra work?&#10;&#10;CodeAstra provides interactive coding tutorials, exercises, and projects across various programming languages and technologies. Users can access these resources, learn at their own pace, and track their progress through our intuitive interface.&#10;&#10;✦ What programming languages and technologies does CodeAstra cover?&#10;CodeAstra covers a diverse range of programming languages and technologies, including but not limited to Python, JavaScript, HTML/CSS, Java, C++, SQL, and more. We regularly update our curriculum to reflect industry trends and demands.&#10;&#10;✦ Is there a ranking system on CodeAstra?&#10;&#10;Yes, CodeAstra features a ranking system that allows users to track their progress and compete with others. By completing coding challenges, projects, and quizzes, users earn points and climb the leaderboard, fostering a sense of achievement and healthy competition within the community.&#10;&#10;✦ Can I interact with other learners on CodeAstra?&#10;&#10;Absolutely! CodeAstra fosters a vibrant community where learners can interact, ask questions, and collaborate on coding projects. Our discussion forums and chat features enable users to seek help, share insights, and connect with like-minded individuals from around the world.&#10;&#10;✦ How can I get help if I'm stuck on a coding problem?&#10;&#10;If you encounter difficulties while learning on CodeAstra, you can seek assistance from our knowledgeable community members via the discussion forums or live chat. Additionally, our support team is readily available to address any technical issues or inquiries you may have.&#10;&#10;✦ Are there any prerequisites for using CodeAstra?&#10;&#10;No prior coding experience is required to get started with CodeAstra. Whether you're a complete beginner or a seasoned developer looking to expand your skills, our platform offers resources tailored to various skill levels.&#10;&#10;✦ Is CodeAstra suitable for schools or educational institutions?&#10;&#10;Yes, CodeAstra is an excellent resource for schools, educational institutions, and educators seeking to incorporate coding education into their curriculum. We offer special plans and features designed specifically for academic use, including classroom management tools and student progress tracking.&#10;&#10;✦ Can I access CodeAstra on mobile devices?&#10;&#10;No they can not. It is only suitable for desktop &#10;&#10;✦ How can I get started with CodeAstra?&#10;&#10;Getting started with CodeAstra is simple! Visit our website, sign up for an account, and explore our wide range of courses and resources. Whether you're looking to learn a new programming language or enhance your existing skills, CodeAstra is here to support your coding journey." wrapText="true" />
+   <Text fill="WHITE" layoutX="302.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frequently Asked Questions">
+      <font>
+         <Font name="Inter SemiBold" size="29.0" />
+      </font>
+   </Text>
+   <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="926.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/Male User.png" />
+      </image>
+   </ImageView>
+   <Hyperlink fx:id="faqbtn1" layoutX="839.0" layoutY="61.0" prefHeight="27.0" prefWidth="94.0" style="-fx-underline: false; -fx-border-style: none; -fx-border-color: none;" text="Dashboard" textFill="WHITESMOKE">
+      <font>
+         <Font name="SFUIDisplay-Regular" size="15.0" />
+      </font>
+   </Hyperlink>
 </AnchorPane>
