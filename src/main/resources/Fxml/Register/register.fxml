@@ -93,7 +93,7 @@
          <Font name="SFUIDisplay-Regular" size="22.0" />
       </font>
    </Label>
-   <TextField fx:id="userLevelText" alignment="CENTER" editable="false" layoutX="324.0" layoutY="194.0" prefHeight="34.0" prefWidth="377.0" style="-fx-text-fill: whitesmoke;" styleClass="custom-box" stylesheets="@../../styles/register.css">
+   <TextField fx:id="userLevelText" alignment="CENTER" editable="false" layoutX="325.0" layoutY="191.0" prefHeight="34.0" prefWidth="377.0" style="-fx-text-fill: whitesmoke;" styleClass="custom-box" stylesheets="@../../styles/register.css">
       <font>
          <Font name="SFUIDisplay-Regular" size="20.0" />
       </font>

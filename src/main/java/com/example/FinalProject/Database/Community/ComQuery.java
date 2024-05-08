@@ -8,7 +8,6 @@ import com.example.FinalProject.Models.user.data.User;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
-import com.example.FinalProject.Database.DatabaseManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -38,7 +37,6 @@ public class ComQuery {
 
     }
 
-    //SPOTS
     public String createSpots(@NotNull User user, String name, String desc, String rules) throws SQLException {
         DatabaseManager db_con = new DatabaseManager();
         db_con.getConnection();
@@ -46,12 +44,12 @@ public class ComQuery {
         String newSpotList = null, spotID = null, sql;
         ResultSet rs;
 
-        //CREATE THE SPOT
+
         sql = "INSERT INTO `spot_tbl` (`spotOwnerID`, `spotRules`, `spotName`, `spotDescription` ) " +
                 "VALUES ('"+ user.getUserID() +"', '"+ rules +"', '"+ name +"', '"+ desc +"')";
         db_con.executeSQL(sql);
 
-        //GET THE SPOT's ID and CONCAT IT TO THE OWNERS JOINED SPOT LISTS
+
         sql = "SELECT `spotID` FROM `spot_tbl` WHERE spotOwnerID = '" + user.getUserID() + "' && spotName = '"+ name +"' ";
         rs = db_con.executeSQLRS(sql);
 
@@ -120,14 +118,14 @@ public class ComQuery {
             db_con.executeSQL(sql);
 
             int count = 0;
-            //GET THE SPOT's MEMBER COUNT
+
             sql = "SELECT `spotCountMember` FROM `spot_tbl` WHERE spotID = '" + spotID + "' ";
             rs = db_con.executeSQLRS(sql);
             while(rs.next()){
                 count = Integer.parseInt(rs.getString("spotCountMember"));
             }
 
-            //INCREMENT THE COUNT OF COMMENT IN THE POST
+
             sql = "UPDATE `spot_tbl` " +
                     "SET `spotCountMember` = '" + (count - 1) + "' " +
                     "WHERE (`spotID` = '" + spotID + "')";
@@ -152,14 +150,14 @@ public class ComQuery {
             db_con.executeSQL(sql);
 
             int count = 0;
-            //GET THE SPOT's MEMBER COUNT
+
             sql = "SELECT `spotCountMember` FROM `spot_tbl` WHERE spotID = '" + spotID + "' ";
             rs = db_con.executeSQLRS(sql);
             while(rs.next()){
                 count = Integer.parseInt(rs.getString("spotCountMember"));
             }
 
-            //INCREMENT THE COUNT OF COMMENT IN THE POST
+
             sql = "UPDATE `spot_tbl` " +
                     "SET `spotCountMember` = '" + (count + 1) + "' " +
                     "WHERE (`spotID` = '" + spotID + "')";
@@ -169,7 +167,7 @@ public class ComQuery {
         db_con.endConnection();
     }
 
-    //CARDS
+
     public ArrayList<CardSpot> getTopSpots(User user) throws SQLException, IOException {
         DatabaseManager db_con = new DatabaseManager();
         db_con.getConnection();
